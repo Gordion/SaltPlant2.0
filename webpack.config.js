@@ -31,6 +31,11 @@ module.exports = {
     filename: './js/bundle.js'
   },
   devtool: "source-map",
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 9000
+  },
   module: {
     rules: [{
         test: /\.js$/,
