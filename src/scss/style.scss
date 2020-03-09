@@ -133,6 +133,9 @@ a:link, a:visited {
   &.-left-aligned {
     justify-content: flex-start;
   }
+  @media (max-width: 1280px) {
+    height: 200px;
+  }
 }
 
 .title-text {
@@ -545,7 +548,7 @@ a:link, a:visited {
 /* -- Event Slider -- */
 
 .text-box-min-slider {
-  height: 110px;
+  // height: 110px;
   padding: 10px;
   font-size: 14px;
 }
@@ -914,11 +917,11 @@ a:link, a:visited {
 .main-theater-background {
   position: relative;
   // margin: 0 auto;
-  margin-top: 200px;
+  margin-top: 300px; /*200px*/
   height: 364px;
   width: 100%;
   background-image: url(images/illustration-ch.png);
-  background-size: 100%;
+  // background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1436,13 +1439,13 @@ font-size: 0.8rem;
 
   .main-theater-background {
     // background-image: url(images/illustration-mob.jpg);
-    height: 500px;
+    // height: 500px;
     // width: 585px;
     // margin-top: 350px;
   }
 
   .main-theater-mp {
-    right: 0;
+    // right: 0;
     // top: 150px;
   }
 
