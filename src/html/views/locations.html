@@ -1,0 +1,37 @@
+<% var data = {
+  title: "Локації"
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+
+<div class="title-exc">
+      <div class="title-text">Особливі локації</div>
+    </div>
+    <div class="main-exc">
+      <div class="gallery-st">
+        <div class="photo-gallery-st">
+        <a data-fancybox="gallery" href="images\hall.jpg">
+          <img class="div-gal-st" src="images\hall.jpg" alt="">
+        </a>
+        <p class="product-name">Ратуша</p>
+        </div>
+
+        <div class="photo-gallery-st">
+          <a data-fancybox="gallery" href="images\christ.jpg">
+            <img class="div-gal-st" src="images\christ.jpg" alt="">
+          </a>
+        <p class="product-name">Церква Воздвиження Чесного Хреста</p>
+        </div>
+
+        <div class="photo-gallery-st">
+          <a data-fancybox="gallery" href="images\jury.jpg">
+            <img class="div-gal-st" src="images\jury.jpg" alt="">
+          </a>
+        <p class="product-name">Церква Святого Юра</p>
+        </div>
+
+      </div>
+    </div>
+
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

@@ -1,0 +1,31 @@
+<% var data = {
+  title: "Партнери"
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+
+<div class="title-exc">
+  <div class="title-text">Партнери</div>
+</div>
+<div class="main-exc">
+  <div class="partners">
+    <div class="main-exc">
+      <div class="gallery-st">
+        <div class="photo-gallery-st">
+          <img class="div-gal-st" src="images\drohHallspons.png" alt="">
+        </div>
+
+        <div class="photo-gallery-st">
+            <img class="div-gal-st" src="images\yourFMspons.jpg" alt="">
+        </div>
+
+        <div class="photo-gallery-st">
+            <img class="div-gal-st" src="images\mediaDrohspons.png" alt="">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>
