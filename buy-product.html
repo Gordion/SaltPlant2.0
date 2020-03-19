@@ -16,6 +16,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Купити товар</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="fonts/GillSans/GillSans-Regular/GillSans.ttf">
         <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
         <link href="style.css" rel="stylesheet" />
@@ -24,69 +25,19 @@
         src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
         crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
         <!-- <script src="script.js"></script>
         <script src="slider.js"></script> -->
         <script type="text/javascript" src="slick/slick.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <script type="text/javascript" src="sticky-sidebar-master/dist/jquery.sticky-sidebar.js"></script>
 
       </head>
       <body>
         <header class="header-exc">
           <div class="menu-bar-exc">
             <img class="menu-exc" src="images/menu.png" alt="">
-            <div class="overlay">
-
-            </div>
-
-            <div class="menu-main">
-
-
-              <div class="menu-title">
-                <div class="menu-cross">
-                  <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L22.2132 22.2132" stroke="#222222" stroke-width="2" stroke-miterlimit="10"/>
-                    <path d="M1 22L22.2132 0.786797" stroke="#222222" stroke-width="2" stroke-miterlimit="10"/>
-                  </svg>
-                </div>
-                <span class="menu-slogan">у ньому вся сіль</span>
-              </div>
-
-              <div class="menu-main-inner">
-                <ul class="menu-list">
-                  <li><a href="index.html">Про Дрогобич</a></li>
-                  <li><a href="needTo.html">Тільки в Дрогобичі</a></li>
-                  <li><a href="locations.html">Особливі локації</a></li>
-
-                  <li><a href="excursion.html">Екскурсії</a></li>
-                  <li><a href="thematic-map.html">Тематичні карти</a></li>
-                  <li><a href="street-museum.html">Вуличний музей</a>
-                  <li><a href="souvenirs.html">Сувеніри</a></li>
-                  <li><a href="food.html">Їжа</a></li>
-                  <li><a href="region.html">Регіон</a></li>
-                </ul>
-                <ul class="menu-side">
-                  <li><a href="http://poizdato.net/rozklad-po-stantsii/drohobych/">Як доїхати?</a></li>
-                  <li><a href="http://drohobych-rda.gov.ua/15/">Туристична картина</a></li>
-
-                  <li><a href="#">Прокласти маршрут</a></li>
-                  <li><a href="#">Події</a></li>
-
-                  <li><a href="https://ru-ru.facebook.com/velo.drohobych/">ВелоДрогобич</a></li>
-                  <li><a href="partners.html">Партнери</a></li>
-
-                  <li><a href="identic.html">Айдентика міста</a></li>
-
-                  <li><a href="https://drohobych-rada.gov.ua/%d0%bf%d1%80%d0%b8%d0%b9%d0%bc%d0%b0%d0%bb%d1%8c%d0%bd%d1%8f/%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d0%b8/">Контакти</a></li>
-                </ul>
-                <div class="menu-links">
-                  <img class="menu-logo" src="images/instagram.png" alt="">
-                  <img class="menu-logo" src="images/facebook.png" alt="">
-                  <img class="menu-logo" src="images/youtube.png" alt="">
-                </div>
-              </div>
-
-            </div>
           </div>
           <div class="logo-wrapper">
             <img class="logo" src="images/cityLogo.png" alt="">
@@ -95,6 +46,65 @@
             <p class="lang">UA</p>
           </div>
         </header>
+        <div class="menu-main">
+
+          <div class="menu-title">
+            <div class="menu-cross">
+              <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L22.2132 22.2132" stroke="#222222" stroke-width="2" stroke-miterlimit="10"/>
+                <path d="M1 22L22.2132 0.786797" stroke="#222222" stroke-width="2" stroke-miterlimit="10"/>
+              </svg>
+            </div>
+            <span class="menu-slogan">у ньому вся сіль</span>
+          </div>
+
+          <div class="menu-main-inner">
+            <ul class="menu-list">
+              <li><a href="index.html">Про Дрогобич</a></li>
+              <li><a href="needTo.html">Тільки в Дрогобичі</a></li>
+              <li><a href="locations.html">Особливі локації</a></li>
+
+              <li><a href="excursion.html">Екскурсії</a></li>
+              <li><a href="thematic-map.html">Тематичні карти</a></li>
+              <li><a href="street-museum.html">Вуличний музей</a>
+              <li><a href="souvenirs.html">Сувеніри</a></li>
+              <li><a href="food.html">Їжа</a></li>
+              <li><a href="region.html">Регіон</a></li>
+            </ul>
+            <ul class="menu-side">
+              <li><a target="_blank" href="http://poizdato.net/rozklad-po-stantsii/drohobych/">Як доїхати?</a></li>
+              <li><a target="_blank" href="http://drohobych-rda.gov.ua/15/">Туристична картина</a></li>
+
+              <li><a href="#">Прокласти маршрут</a></li>
+              <li><a href="#">Події</a></li>
+
+              <li><a target="_blank" href="https://ru-ru.facebook.com/velo.drohobych/">ВелоДрогобич</a></li>
+              <li><a href="partners.html">Партнери</a></li>
+
+              <li><a href="identic.html">Айдентика міста</a></li>
+
+              <li><a target="_blank" href="https://drohobych-rada.gov.ua/%d0%bf%d1%80%d0%b8%d0%b9%d0%bc%d0%b0%d0%bb%d1%8c%d0%bd%d1%8f/%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d0%b8/">Контакти</a></li>
+            </ul>
+            <div class="menu-links">
+              <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.5 5.2C18.5 5.9 17.9 6.5 17.2 6.5C16.5 6.5 15.9 5.9 15.9 5.2C15.9 4.5 16.5 3.9 17.2 3.9C17.9 3.9 18.5 4.5 18.5 5.2ZM16.9 11.1C16.9 14.1 14.4 16.6 11.4 16.6C8.4 16.6 5.9 14.1 5.9 11.1C5.9 8.1 8.4 5.6 11.4 5.6C14.4 5.6 16.9 8.1 16.9 11.1ZM14.9 11.1C14.9 9.2 13.3 7.6 11.4 7.6C9.5 7.6 7.9 9.2 7.9 11.1C7.9 13 9.5 14.6 11.4 14.6C13.3 14.6 14.9 13 14.9 11.1ZM22.5 6.7C22.5 3 19.5 0 15.8 0H6.7C3 0 0 3 0 6.7V15.8C0 19.5 3 22.5 6.7 22.5H15.8C19.5 22.5 22.5 19.5 22.5 15.8V6.7ZM20.3 15.7C20.3 18.2 18.2 20.3 15.7 20.3H6.8C4.3 20.3 2.2 18.2 2.2 15.7V6.8C2.2 4.3 4.3 2.2 6.8 2.2H15.7C18.2 2.2 20.3 4.3 20.3 6.8V15.7Z" fill="#F19106"/>
+              </svg>
+
+              <svg style="margin-left:19.5px" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.1 1.2C0.1 0.6 0.7 0 1.3 0C8 0 14.6 0 21.3 0C21.8 0 22.3 0.4 22.5 0.9C22.6 1.1 22.5 1.3 22.5 1.6C22.5 8.2 22.5 14.7 22.5 21.3C22.5 21.9 22.1 22.4 21.6 22.5C21.4 22.5 21.3 22.5 21.1 22.5C19.1 22.5 17.8 22.5 15.6 22.5C15.6 19.6 15.6 16.7 15.6 13.8C16.5 13.8 17.3 13.8 18.2 13.8C18.3 13.8 18.4 13.8 18.5 13.8C18.5 13.5 18.6 13.2 18.6 12.9C18.6 12.5 18.7 12.2 18.7 11.8C18.8 11.3 18.8 10.9 18.9 10.4C17.8 10.4 16.7 10.4 15.6 10.4C15.6 9.6 15.6 8.9 15.6 8.1C15.6 7.7 15.7 7.3 15.9 7C16.1 6.8 16.4 6.6 16.7 6.6C17 6.5 17.3 6.5 17.5 6.5C18 6.5 18.5 6.5 19 6.5C19 5.7 19 4.8 19 4C19 3.8 19 3.7 19 3.5C18.2 3.4 17.4 3.4 16.5 3.4C15.8 3.4 15 3.5 14.4 3.8C13.6 4.1 12.9 4.8 12.5 5.6C12.2 6.2 12.1 6.9 12 7.6C12 8.5 12 9.5 12 10.4C11 10.4 10 10.4 9.1 10.4C9.1 11.5 9.1 12.7 9.1 13.8C10.1 13.8 11 13.8 12 13.8C12 14.5 12 15.3 12 16.1C12 18.2 12 20.4 12 22.5C8.5 22.5 5 22.5 1.5 22.5C1.3 22.5 1 22.5 0.8 22.4C0.4 22.3 0.1 21.9 0 21.5C0 21.3 0 21.1 0 20.9C0.1 14.4 0.1 7.8 0.1 1.2Z" fill="#F19106"/>
+              </svg>
+
+              <svg style="margin-left:19.5px" width="26" height="23" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.3 3.9C25.3 3.9 25.1 2.1 24.3 1.3C23.3 0.3 22.2 0.3 21.7 0.2C18.1 0 12.8 0 12.8 0C12.8 0 7.4 0 3.9 0.3C3.3 0.3 2.2 0.3 1.3 1.3C0.5 2.1 0.3 3.9 0.3 3.9C0.3 3.9 0 6 0 8.1V10.1C0 12.2 0.3 14.3 0.3 14.3C0.3 14.3 0.5 16.1 1.3 16.9C2.3 17.9 3.5 17.9 4.1 18C6.1 18.2 12.8 18.3 12.8 18.3C12.8 18.3 18.2 18.3 21.7 18C22.2 17.9 23.3 17.9 24.3 16.9C25.1 16.1 25.3 14.3 25.3 14.3C25.3 14.3 25.6 12.2 25.6 10.1V8.1C25.5 6 25.3 3.9 25.3 3.9ZM10.1 12.4V5.2L17 8.8L10.1 12.4Z" fill="#F19106"/>
+              </svg>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="overlay">
+
+        </div>
 
 
 
@@ -255,6 +265,11 @@
     <a href="food.html">Їжа</a>
     <a href="region.html">Регіон</a>
   </div>
+  <div style="color:orange" class="footer-menu-section">
+    <a href="#">Instagram</a>
+    <a href="#">Facebook</a>
+    <a href="#">Youtube</a>
+  </div>
 </div>
   <!-- </ul> -->
   <!-- Bottom border -->
@@ -279,17 +294,22 @@
 
   </div>
 <div class="footer-side">
-<div class="footer-contacts">
-<p>+380 (97) 786 60 09</p> <p>М. Дрогобич, пл. Ринок,1</p>
-
-<p>drogo.centr@gmail.com</p>
 
 
 
-</div>
-<div class="footer-social">
-  <a href="#">Instagram</a> - <a href="#">Facebook</a>  - <a href="#">Youtube</a>
-</div>
+<!-- <div class="footer-contacts"> -->
+  <div class="footer-menu-section">
+    <p>+380 (97) 786 60 09</p>
+    <p>М. Дрогобич, пл. Ринок,1</p>
+    <p>drogo.centr@gmail.com</p>
+  </div>
+
+
+
+<!-- </div> -->
+<!-- <div class="footer-social">
+  <a href="#">Instagram</a> <a href="#">Facebook</a><a href="#">Youtube</a>
+</div> -->
 <div class="footer-icons">
   <svg width="141" height="33" viewBox="0 0 141 33" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M17.8921 26.9277C12.0171 26.9277 6.32008 25.5151 1.42424 22.9547L0 28.252C5.42993 30.9006 11.572 32.3132 17.8921 32.3132C24.3011 32.3132 30.4432 30.9006 35.7841 28.252L34.3599 22.8665C29.553 25.5151 23.8561 26.9277 17.8921 26.9277Z" fill="#F19106"/>
@@ -380,7 +400,14 @@
 <path d="M129.385 43.3857C129.473 43.3857 129.583 43.4077 129.671 43.4516C129.758 43.4955 129.868 43.5614 130 43.6712L129.737 44.2859C129.539 44.1322 129.363 44.0444 129.232 44.0444C129.122 44.0444 129.012 44.0883 128.902 44.1761C128.792 44.2639 128.705 44.3737 128.639 44.5055C128.573 44.6372 128.551 44.7689 128.551 44.9006V46.1301H127.826V43.4297H128.551V44.1103H128.573C128.705 43.8468 128.836 43.6492 128.968 43.5394C129.078 43.4516 129.232 43.3857 129.385 43.3857Z" fill="#67415C"/>
 </svg>
 
+
+<a href="#top"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="40" y="40" width="40" height="40" transform="rotate(180 40 40)" fill="#F19106"/>
+<path d="M12.9504 24L20 17L27 24" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+</svg></a>
+
 </div>
+
 
 </div>
 

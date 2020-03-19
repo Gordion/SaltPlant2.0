@@ -16,6 +16,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Головна</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="fonts/GillSans/GillSans-Regular/GillSans.ttf">
         <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
         <link href="style.css" rel="stylesheet" />
@@ -24,69 +25,19 @@
         src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
         crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
         <!-- <script src="script.js"></script>
         <script src="slider.js"></script> -->
         <script type="text/javascript" src="slick/slick.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <script type="text/javascript" src="sticky-sidebar-master/dist/jquery.sticky-sidebar.js"></script>
 
       </head>
       <body>
         <header class="header-exc">
           <div class="menu-bar-exc">
             <img class="menu-exc" src="images/menu.png" alt="">
-            <div class="overlay">
-
-            </div>
-
-            <div class="menu-main">
-
-
-              <div class="menu-title">
-                <div class="menu-cross">
-                  <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L22.2132 22.2132" stroke="#222222" stroke-width="2" stroke-miterlimit="10"/>
-                    <path d="M1 22L22.2132 0.786797" stroke="#222222" stroke-width="2" stroke-miterlimit="10"/>
-                  </svg>
-                </div>
-                <span class="menu-slogan">у ньому вся сіль</span>
-              </div>
-
-              <div class="menu-main-inner">
-                <ul class="menu-list">
-                  <li><a href="index.html">Про Дрогобич</a></li>
-                  <li><a href="needTo.html">Тільки в Дрогобичі</a></li>
-                  <li><a href="locations.html">Особливі локації</a></li>
-
-                  <li><a href="excursion.html">Екскурсії</a></li>
-                  <li><a href="thematic-map.html">Тематичні карти</a></li>
-                  <li><a href="street-museum.html">Вуличний музей</a>
-                  <li><a href="souvenirs.html">Сувеніри</a></li>
-                  <li><a href="food.html">Їжа</a></li>
-                  <li><a href="region.html">Регіон</a></li>
-                </ul>
-                <ul class="menu-side">
-                  <li><a href="http://poizdato.net/rozklad-po-stantsii/drohobych/">Як доїхати?</a></li>
-                  <li><a href="http://drohobych-rda.gov.ua/15/">Туристична картина</a></li>
-
-                  <li><a href="#">Прокласти маршрут</a></li>
-                  <li><a href="#">Події</a></li>
-
-                  <li><a href="https://ru-ru.facebook.com/velo.drohobych/">ВелоДрогобич</a></li>
-                  <li><a href="partners.html">Партнери</a></li>
-
-                  <li><a href="identic.html">Айдентика міста</a></li>
-
-                  <li><a href="https://drohobych-rada.gov.ua/%d0%bf%d1%80%d0%b8%d0%b9%d0%bc%d0%b0%d0%bb%d1%8c%d0%bd%d1%8f/%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d0%b8/">Контакти</a></li>
-                </ul>
-                <div class="menu-links">
-                  <img class="menu-logo" src="images/instagram.png" alt="">
-                  <img class="menu-logo" src="images/facebook.png" alt="">
-                  <img class="menu-logo" src="images/youtube.png" alt="">
-                </div>
-              </div>
-
-            </div>
           </div>
           <div class="logo-wrapper">
             <img class="logo" src="images/cityLogo.png" alt="">
@@ -95,46 +46,118 @@
             <p class="lang">UA</p>
           </div>
         </header>
+        <div class="menu-main">
+
+          <div class="menu-title">
+            <div class="menu-cross">
+              <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L22.2132 22.2132" stroke="#222222" stroke-width="2" stroke-miterlimit="10"/>
+                <path d="M1 22L22.2132 0.786797" stroke="#222222" stroke-width="2" stroke-miterlimit="10"/>
+              </svg>
+            </div>
+            <span class="menu-slogan">у ньому вся сіль</span>
+          </div>
+
+          <div class="menu-main-inner">
+            <ul class="menu-list">
+              <li><a href="index.html">Про Дрогобич</a></li>
+              <li><a href="needTo.html">Тільки в Дрогобичі</a></li>
+              <li><a href="locations.html">Особливі локації</a></li>
+
+              <li><a href="excursion.html">Екскурсії</a></li>
+              <li><a href="thematic-map.html">Тематичні карти</a></li>
+              <li><a href="street-museum.html">Вуличний музей</a>
+              <li><a href="souvenirs.html">Сувеніри</a></li>
+              <li><a href="food.html">Їжа</a></li>
+              <li><a href="region.html">Регіон</a></li>
+            </ul>
+            <ul class="menu-side">
+              <li><a target="_blank" href="http://poizdato.net/rozklad-po-stantsii/drohobych/">Як доїхати?</a></li>
+              <li><a target="_blank" href="http://drohobych-rda.gov.ua/15/">Туристична картина</a></li>
+
+              <li><a href="#">Прокласти маршрут</a></li>
+              <li><a href="#">Події</a></li>
+
+              <li><a target="_blank" href="https://ru-ru.facebook.com/velo.drohobych/">ВелоДрогобич</a></li>
+              <li><a href="partners.html">Партнери</a></li>
+
+              <li><a href="identic.html">Айдентика міста</a></li>
+
+              <li><a target="_blank" href="https://drohobych-rada.gov.ua/%d0%bf%d1%80%d0%b8%d0%b9%d0%bc%d0%b0%d0%bb%d1%8c%d0%bd%d1%8f/%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d0%b8/">Контакти</a></li>
+            </ul>
+            <div class="menu-links">
+              <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.5 5.2C18.5 5.9 17.9 6.5 17.2 6.5C16.5 6.5 15.9 5.9 15.9 5.2C15.9 4.5 16.5 3.9 17.2 3.9C17.9 3.9 18.5 4.5 18.5 5.2ZM16.9 11.1C16.9 14.1 14.4 16.6 11.4 16.6C8.4 16.6 5.9 14.1 5.9 11.1C5.9 8.1 8.4 5.6 11.4 5.6C14.4 5.6 16.9 8.1 16.9 11.1ZM14.9 11.1C14.9 9.2 13.3 7.6 11.4 7.6C9.5 7.6 7.9 9.2 7.9 11.1C7.9 13 9.5 14.6 11.4 14.6C13.3 14.6 14.9 13 14.9 11.1ZM22.5 6.7C22.5 3 19.5 0 15.8 0H6.7C3 0 0 3 0 6.7V15.8C0 19.5 3 22.5 6.7 22.5H15.8C19.5 22.5 22.5 19.5 22.5 15.8V6.7ZM20.3 15.7C20.3 18.2 18.2 20.3 15.7 20.3H6.8C4.3 20.3 2.2 18.2 2.2 15.7V6.8C2.2 4.3 4.3 2.2 6.8 2.2H15.7C18.2 2.2 20.3 4.3 20.3 6.8V15.7Z" fill="#F19106"/>
+              </svg>
+
+              <svg style="margin-left:19.5px" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.1 1.2C0.1 0.6 0.7 0 1.3 0C8 0 14.6 0 21.3 0C21.8 0 22.3 0.4 22.5 0.9C22.6 1.1 22.5 1.3 22.5 1.6C22.5 8.2 22.5 14.7 22.5 21.3C22.5 21.9 22.1 22.4 21.6 22.5C21.4 22.5 21.3 22.5 21.1 22.5C19.1 22.5 17.8 22.5 15.6 22.5C15.6 19.6 15.6 16.7 15.6 13.8C16.5 13.8 17.3 13.8 18.2 13.8C18.3 13.8 18.4 13.8 18.5 13.8C18.5 13.5 18.6 13.2 18.6 12.9C18.6 12.5 18.7 12.2 18.7 11.8C18.8 11.3 18.8 10.9 18.9 10.4C17.8 10.4 16.7 10.4 15.6 10.4C15.6 9.6 15.6 8.9 15.6 8.1C15.6 7.7 15.7 7.3 15.9 7C16.1 6.8 16.4 6.6 16.7 6.6C17 6.5 17.3 6.5 17.5 6.5C18 6.5 18.5 6.5 19 6.5C19 5.7 19 4.8 19 4C19 3.8 19 3.7 19 3.5C18.2 3.4 17.4 3.4 16.5 3.4C15.8 3.4 15 3.5 14.4 3.8C13.6 4.1 12.9 4.8 12.5 5.6C12.2 6.2 12.1 6.9 12 7.6C12 8.5 12 9.5 12 10.4C11 10.4 10 10.4 9.1 10.4C9.1 11.5 9.1 12.7 9.1 13.8C10.1 13.8 11 13.8 12 13.8C12 14.5 12 15.3 12 16.1C12 18.2 12 20.4 12 22.5C8.5 22.5 5 22.5 1.5 22.5C1.3 22.5 1 22.5 0.8 22.4C0.4 22.3 0.1 21.9 0 21.5C0 21.3 0 21.1 0 20.9C0.1 14.4 0.1 7.8 0.1 1.2Z" fill="#F19106"/>
+              </svg>
+
+              <svg style="margin-left:19.5px" width="26" height="23" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.3 3.9C25.3 3.9 25.1 2.1 24.3 1.3C23.3 0.3 22.2 0.3 21.7 0.2C18.1 0 12.8 0 12.8 0C12.8 0 7.4 0 3.9 0.3C3.3 0.3 2.2 0.3 1.3 1.3C0.5 2.1 0.3 3.9 0.3 3.9C0.3 3.9 0 6 0 8.1V10.1C0 12.2 0.3 14.3 0.3 14.3C0.3 14.3 0.5 16.1 1.3 16.9C2.3 17.9 3.5 17.9 4.1 18C6.1 18.2 12.8 18.3 12.8 18.3C12.8 18.3 18.2 18.3 21.7 18C22.2 17.9 23.3 17.9 24.3 16.9C25.1 16.1 25.3 14.3 25.3 14.3C25.3 14.3 25.6 12.2 25.6 10.1V8.1C25.5 6 25.3 3.9 25.3 3.9ZM10.1 12.4V5.2L17 8.8L10.1 12.4Z" fill="#F19106"/>
+              </svg>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="overlay">
+
+        </div>
 
 
 <div class="hero-image">
   <div class="hero-image-title">Для чого їхати в Дрогобич?</div>
-  <div class="hero-image-background"></div>
+<div class="hero-image-background"> <div class="down-arrow"><svg width="31" height="17" viewBox="0 0 31 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M29.3 1L15.1 15.1L1 1" stroke="#F19106" stroke-width="2" stroke-miterlimit="10"/>
+</svg></div></div>
 </div>
 
 <div class="main-exc-mp container">
   <div class="main-exc-menu">
     <div class="main-menu-bar">
       <a href="needTo.html" class="main-menu-bar-el">
-        <div class="square-hex-menu"><img src="images\tilky_v_drohobychi.svg" alt=""></div>
+        <div class="square-hex-menu"><svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1,.cls-3{fill:none;stroke:#f19106;stroke-linejoin:bevel;}.cls-1{stroke-width:4px;}.cls-2{fill:#f19106;}.cls-3{stroke-width:2px;}</style></defs><title>icons</title><polyline class="cls-1" points="24.44 90.63 25.69 61.99 65.86 61.99 67.01 87.65"/><path class="cls-2" d="M50.22,69.56A2.05,2.05,0,0,0,48,71.38a2.27,2.27,0,0,0-4.45,0,2.26,2.26,0,0,0-4.44,0v6.07l13.33-.74V71.38A2.05,2.05,0,0,0,50.22,69.56Z"/><path class="cls-2" d="M48.62,84.32a1.5,1.5,0,0,0-1.42.84,1.63,1.63,0,0,0-2.85,0,1.5,1.5,0,0,0-1.42-.84,1.39,1.39,0,0,0-1.51,1.23V88l8.71-.74V85.55A1.39,1.39,0,0,0,48.62,84.32Z"/><polygon class="cls-1" points="18.67 61.99 27.88 55.36 45.78 17.2 63.67 55.36 72.88 61.99 18.67 61.99"/><ellipse class="cls-1" cx="45.78" cy="16.51" rx="0.84" ry="0.68"/><line class="cls-3" x1="45.78" y1="8.55" x2="45.78" y2="15.83"/><line class="cls-3" x1="48.06" y1="10.88" x2="43.5" y2="10.88"/><line class="cls-1" x1="27.88" y1="55.36" x2="63.67" y2="55.36"/><line class="cls-1" x1="5.34" y1="91.45" x2="86.21" y2="85.79"/></svg>
+</div>
         <p class="menu-el-name">Тільки в Дрогобичі</p>
       </a>
       <a href="locations.html" class="main-menu-bar-el">
-        <div class="square-hex-menu"><img src="images\osoblyvi_lokatsii.svg" alt=""></div>
+        <div class="square-hex-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <defs><style>.cls-1{fill:none;stroke:#f19106;stroke-linejoin:bevel;stroke-width:4px;}</style></defs>
+            <title>icons</title>
+            <line class="cls-1" x1="9.56" y1="91.45" x2="90.44" y2="85.79"/>
+            <line class="cls-1" x1="28.64" y1="80.02" x2="28.64" y2="90.11"/>
+            <line class="cls-1" x1="50.33" y1="77.87" x2="50.33" y2="88.6"/>
+            <polyline class="cls-1" points="74.91 86.88 74.91 75.62 64.7 62.84"/>
+            <polyline class="cls-1" points="67.11 60.43 50.33 77.87 25.2 80.36 36.73 65.33 67.11 60.43 82.04 79.13 74.91 79.13"/><line class="cls-1" x1="17.96" y1="90.86" x2="22.54" y2="49.86"/><line class="cls-1" x1="30.09" y1="73.98" x2="30.03" y2="39.44"/><line class="cls-1" x1="38.44" y1="65.05" x2="36.12" y2="48.81"/><polygon class="cls-1" points="22.54 49.86 22.88 42.76 30.03 39.44 35.81 41.1 36.13 48.81 30.04 47.59 22.54 49.86"/>
+          </svg>
+        </div>
         <p class="menu-el-name">Особливі локації</p>
       </a>
       <a href="excursion.html" class="main-menu-bar-el">
-        <div class="square-hex-menu"><img src="images\excursii.svg" alt=""></div>
+        <div class="square-hex-menu"><svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:none;stroke:#f19106;stroke-linejoin:bevel;stroke-width:4px;}.cls-2{fill:#f19106;}</style></defs><title>icons</title><line class="cls-1" x1="9.56" y1="91.45" x2="90.44" y2="85.79"/><path class="cls-1" d="M36.1,89.6a11.24,11.24,0,1,1,14.67-1.06"/><polyline class="cls-1" points="23.46 90.48 23.46 61.52 76.54 61.52 76.54 86.77"/><circle class="cls-2" cx="65.48" cy="73.66" r="3.87"/><rect class="cls-1" x="61.37" y="58.03" width="8.23" height="3.49"/></svg></div>
         <p class="menu-el-name">Екскурсії</p>
       </a>
       <a href="thematic-map.html" class="main-menu-bar-el">
-        <div class="square-hex-menu"><img src="images\tematychni_karty.svg" alt=""></div>
+        <div class="square-hex-menu"><svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:none;stroke:#f19106;stroke-linejoin:bevel;stroke-width:4px;}</style></defs><title>icons</title><line class="cls-1" x1="9.56" y1="91.45" x2="90.44" y2="85.79"/><circle class="cls-1" cx="68.52" cy="64.82" r="6.95"/><path class="cls-1" d="M63.68,87.66C58.19,82.48,50,73.32,50,64.82a18.53,18.53,0,0,1,37.06,0c0,8.12-7.47,16.83-12.92,22.11"/><line class="cls-1" x1="53.8" y1="76" x2="23.5" y2="57.87"/><line class="cls-1" x1="50.85" y1="69.84" x2="37.57" y2="90.14"/><line class="cls-1" x1="38.65" y1="51.37" x2="28.81" y2="90.1"/></svg></div>
         <p class="menu-el-name">Тематичні карти</p>
       </a>
       <a href="street-museum.html" class="main-menu-bar-el">
-        <div class="square-hex-menu"><img src="images\vulychnyi_muzey.svg" alt=""></div>
+        <div class="square-hex-menu"><svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:none;stroke:#f19106;stroke-linejoin:bevel;stroke-width:4px;}.cls-2{fill:#f19106;}</style></defs><title>icons</title><line class="cls-1" x1="9.56" y1="91.45" x2="90.44" y2="85.79"/><path class="cls-1" d="M62.79,56.14H37.39a12.77,12.77,0,0,1,25.4,0Z"/><path class="cls-2" d="M52.8,42.69V45a12.81,12.81,0,0,0-5.42,0V42.69A2.71,2.71,0,0,1,50.09,40h0A2.72,2.72,0,0,1,52.8,42.69Z"/><rect class="cls-1" x="35.09" y="56.14" width="29.99" height="2.71"/><polyline class="cls-1" points="62.79 88.83 62.79 58.85 37.39 58.85 37.39 90.61"/><circle class="cls-1" cx="50.09" cy="73.15" r="2.55"/><circle class="cls-1" cx="50.09" cy="73.15" r="7.99"/><path class="cls-2" d="M66.06,69.77h0a2.78,2.78,0,0,1,2.78,2.78v1.18a2.78,2.78,0,0,1-2.78,2.78h0a0,0,0,0,1,0,0V69.77A0,0,0,0,1,66.06,69.77Z"/><path class="cls-2" d="M34.11,69.77h0a0,0,0,0,1,0,0v6.74a0,0,0,0,1,0,0h0a2.78,2.78,0,0,1-2.78-2.78V72.55A2.78,2.78,0,0,1,34.11,69.77Z"/><rect class="cls-2" x="62.79" y="65.15" width="3.28" height="15.99"/><rect class="cls-2" x="34.11" y="65.15" width="3.28" height="15.99"/></svg></div>
         <p class="menu-el-name">Вуличний музей</p>
       </a>
       <a href="souvenirs.html"class="main-menu-bar-el">
-        <div class="square-hex-menu"><img src="images\suveniry.svg" alt=""></div>
+        <div class="square-hex-menu"><svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:none;stroke:#f19106;stroke-linejoin:bevel;stroke-width:4px;}</style></defs><title>icons</title><path class="cls-1" d="M71.29,87.13l-1.46-5.69A41.44,41.44,0,0,1,50,86.36,41.47,41.47,0,0,1,30.19,81.5L28.39,88a44,44,0,0,0,4.09,1.8"/><path class="cls-1" d="M40.57,58.7,36,78.33l-1.24,5.25a41.1,41.1,0,0,0,5.88,1.74l1.64-7,3.28-14h8.86l3.28,14,1.65,7a40.09,40.09,0,0,0,5.87-1.74l-1.24-5.27L59.33,58.7Z"/><line class="cls-1" x1="9.56" y1="91.45" x2="90.44" y2="85.79"/><path class="cls-1" d="M47.11,58.7a3,3,0,0,1,0-.42,2.89,2.89,0,0,1,5.78,0,3,3,0,0,1,0,.42"/><circle class="cls-1" cx="49.97" cy="50.57" r="2.89"/><circle class="cls-1" cx="49.97" cy="39.98" r="5.78"/></svg></div>
         <p class="menu-el-name">Сувеніри</p>
       </a>
       <a href="food.html" class="main-menu-bar-el">
-        <div class="square-hex-menu"><img src="images\yizha.svg" alt=""></div>
+        <div class="square-hex-menu"><svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:none;stroke:#f19106;stroke-linejoin:bevel;stroke-width:4px;}</style></defs><title>icons</title><line class="cls-1" x1="9.56" y1="91.45" x2="90.44" y2="85.79"/><line class="cls-1" x1="74.36" y1="65.64" x2="74.36" y2="85.74"/><ellipse class="cls-1" cx="74.36" cy="58.04" rx="5.34" ry="7.59"/><line class="cls-1" x1="63.44" y1="61.53" x2="63.44" y2="87.27"/><line class="cls-1" x1="63.44" y1="50.45" x2="63.44" y2="61.53"/><polyline class="cls-1" points="68.44 50.45 68.44 61.53 63.44 64.53 58.44 61.53 58.44 50.45"/><circle class="cls-1" cx="41.86" cy="65.81" r="3.05"/><path class="cls-1" d="M41.86,89.19H21.52a20.33,20.33,0,0,1,40.62-1.42"/><line class="cls-1" x1="13.54" y1="89.19" x2="41.86" y2="89.19"/></svg></div>
         <p class="menu-el-name">Їжа</p>
       </a>
       <a href="region.html" class="main-menu-bar-el">
-        <div class="square-hex-menu"><img src="images\region.svg" alt=""></div>
+        <div class="square-hex-menu"><svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:none;stroke:#f19106;stroke-linejoin:bevel;stroke-width:4px;}</style></defs><title>icons</title><line class="cls-1" x1="9.56" y1="91.45" x2="90.44" y2="85.79"/><polyline class="cls-1" points="27.2 90.54 27.73 85.39 20.46 79.5 17.39 72.34 26.96 68.56 29.44 69.58 34.26 53.36 45.8 52.25 52.83 48.33 61.36 41.56 78.87 49.08 76.55 55.88 82.61 56.34 74.17 77.73 72.38 85.38 70.84 87.49"/><line class="cls-1" x1="45.8" y1="52.25" x2="48.63" y2="71.12"/><line class="cls-1" x1="81.44" y1="59.31" x2="48.63" y2="71.12"/><line class="cls-1" x1="48.63" y1="71.12" x2="36.08" y2="89.92"/><line class="cls-1" x1="18.82" y1="75.69" x2="45.01" y2="76.55"/></svg></div>
         <p class="menu-el-name">Регіон</p>
       </a>
     </div>
@@ -146,24 +169,31 @@
       <div class="slider2" style="">
         <div class="slider-placeholder">
           <div class="slider-placeholder-photo">
-            <img class="slider-placeholder-img" src="images\christ.jpg" alt="">
+            <img class="slider-placeholder-img" src="images\christ1.jfif" alt="">
           </div>
           <div class="slider-placeholder-main">
             <p class="main-theater-title-slider">Церква Воздвиження Чесного Хреста 1</p>
             <div class="basic-placeholder-mp">
               <div class="text-box-mp">
                 <p class="text-holder-slider">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Excepteur sint occaecat cupidatat non proident,
-                  sunt in culpa qui officia deserunt mollit anim id est laborum.
+Воздвиженська церква є взірцем дерев’яної архітектури та історичною пам’яткою національного значення періоду українського Відродження. Відноситься до музейного комплексу відділу пам’яток дерев’яної архітектури музею «Дрогобиччина».
                 </p>
 
               <div class="share-like-mp">
                 <!-- <img class="share-img" src="images/share.svg" alt="">
                 <img class="like-img"src="images/like.svg" alt=""> -->
-                <img style="width: 35px; height: 35px;" class="share-img" src="images/share.svg" alt="">
-                <img style="width: 35px; height: 35px;" class="like-img"src="images/likes.svg" alt="">
+                <div class="share-like-mp">
+                  <!-- <img class="share-img" src="images/share.svg" alt="">
+                  <img class="like-img"src="images/like.svg" alt=""> -->
+                  <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12.2488 2.7C11.8488 1.1 10.4488 0 8.84884 0C7.94884 0 7.04884 0.3 6.24884 0.9C5.44884 0.3 4.54884 0 3.64884 0C2.04884 0 0.64884 1.1 0.14884 2.7C-0.45116 4.9 0.64884 8.2 5.54884 11.1L6.14884 11.5L6.74884 11.1C11.7488 8.3 12.8488 4.9 12.2488 2.7ZM6.24884 10.1C1.94884 7.5 0.94884 4.8 1.34884 3C1.64884 1.9 2.54884 1.2 3.64884 1.2C4.34884 1.2 5.14884 1.5 5.84884 2.1L6.24884 2.5L6.64884 2.1C7.34884 1.6 8.04884 1.2 8.84884 1.2C9.94884 1.2 10.8488 1.9 11.1488 3C11.5488 4.8 10.5488 7.6 6.24884 10.1Z" fill="black"/>
+  </svg>
+
+                  <svg style="margin-left:10px;"width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M2.33333 8.72708C2.93333 8.72708 3.43333 8.52708 3.93333 8.12708L7.33333 9.72708C6.93333 10.9271 7.53333 12.2271 8.73333 12.7271C9.93333 13.1271 11.2333 12.5271 11.7333 11.3271C12.1333 10.1271 11.5333 8.82708 10.3333 8.32708C9.43333 8.02708 8.53333 8.22708 7.83333 8.82708L4.53333 7.22708C4.73333 6.72708 4.73333 6.12708 4.53333 5.52708L7.83333 3.92708C8.73333 4.82708 10.2333 4.92708 11.1333 4.02708C12.0333 3.12708 12.1333 1.62708 11.2333 0.727079C10.3333 -0.172921 8.83333 -0.272921 7.93333 0.627079C7.23333 1.22708 7.03333 2.12708 7.23333 3.02708L3.83333 4.62708C2.83333 3.82708 1.33333 4.02708 0.533333 5.02708C-0.266667 6.02708 -0.166667 7.42708 0.833333 8.32708C1.33333 8.62708 1.83333 8.72708 2.33333 8.72708ZM9.43333 9.32708C10.1333 9.32708 10.6333 9.82708 10.6333 10.5271C10.6333 11.2271 10.1333 11.7271 9.43333 11.7271C8.73333 11.7271 8.23333 11.2271 8.23333 10.5271C8.23333 9.82708 8.83333 9.32708 9.43333 9.32708ZM9.43333 1.12708C10.1333 1.12708 10.6333 1.62708 10.6333 2.32708C10.6333 3.02708 10.1333 3.52708 9.43333 3.52708C8.83333 3.52708 8.23333 3.02708 8.23333 2.32708C8.23333 1.72708 8.83333 1.12708 9.43333 1.12708ZM2.33333 5.22708C3.03333 5.22708 3.53333 5.72708 3.53333 6.42708C3.53333 7.12708 3.03333 7.62708 2.33333 7.62708C1.63333 7.62708 1.13333 7.12708 1.13333 6.42708C1.13333 5.72708 1.63333 5.22708 2.33333 5.22708Z" fill="black"/>
+  </svg>
+
+                </div>
               </div>
               </div>
                 <div class="buttons-slider">
@@ -183,18 +213,21 @@
             <div class="basic-placeholder-mp">
               <div class="text-box-mp">
                 <p class="text-holder-slider">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Excepteur sint occaecat cupidatat non proident,
-                  sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Воздвиженська церква є взірцем дерев’яної архітектури та історичною пам’яткою національного значення періоду українського Відродження. Відноситься до музейного комплексу відділу пам’яток дерев’яної архітектури музею «Дрогобиччина».
                 </p>
 
-              <div class="share-like-mp">
-                <!-- <img class="share-img" src="images/share.svg" alt="">
-                <img class="like-img"src="images/like.svg" alt=""> -->
-                <img style="width: 35px; height: 35px;" class="share-img" src="images/share.svg" alt="">
-                <img style="width: 35px; height: 35px;" class="like-img"src="images/likes.svg" alt="">
-              </div>
+                <div class="share-like-mp">
+                  <!-- <img class="share-img" src="images/share.svg" alt="">
+                  <img class="like-img"src="images/like.svg" alt=""> -->
+                  <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12.2488 2.7C11.8488 1.1 10.4488 0 8.84884 0C7.94884 0 7.04884 0.3 6.24884 0.9C5.44884 0.3 4.54884 0 3.64884 0C2.04884 0 0.64884 1.1 0.14884 2.7C-0.45116 4.9 0.64884 8.2 5.54884 11.1L6.14884 11.5L6.74884 11.1C11.7488 8.3 12.8488 4.9 12.2488 2.7ZM6.24884 10.1C1.94884 7.5 0.94884 4.8 1.34884 3C1.64884 1.9 2.54884 1.2 3.64884 1.2C4.34884 1.2 5.14884 1.5 5.84884 2.1L6.24884 2.5L6.64884 2.1C7.34884 1.6 8.04884 1.2 8.84884 1.2C9.94884 1.2 10.8488 1.9 11.1488 3C11.5488 4.8 10.5488 7.6 6.24884 10.1Z" fill="black"/>
+  </svg>
+
+                  <svg style="margin-left:10px;"width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M2.33333 8.72708C2.93333 8.72708 3.43333 8.52708 3.93333 8.12708L7.33333 9.72708C6.93333 10.9271 7.53333 12.2271 8.73333 12.7271C9.93333 13.1271 11.2333 12.5271 11.7333 11.3271C12.1333 10.1271 11.5333 8.82708 10.3333 8.32708C9.43333 8.02708 8.53333 8.22708 7.83333 8.82708L4.53333 7.22708C4.73333 6.72708 4.73333 6.12708 4.53333 5.52708L7.83333 3.92708C8.73333 4.82708 10.2333 4.92708 11.1333 4.02708C12.0333 3.12708 12.1333 1.62708 11.2333 0.727079C10.3333 -0.172921 8.83333 -0.272921 7.93333 0.627079C7.23333 1.22708 7.03333 2.12708 7.23333 3.02708L3.83333 4.62708C2.83333 3.82708 1.33333 4.02708 0.533333 5.02708C-0.266667 6.02708 -0.166667 7.42708 0.833333 8.32708C1.33333 8.62708 1.83333 8.72708 2.33333 8.72708ZM9.43333 9.32708C10.1333 9.32708 10.6333 9.82708 10.6333 10.5271C10.6333 11.2271 10.1333 11.7271 9.43333 11.7271C8.73333 11.7271 8.23333 11.2271 8.23333 10.5271C8.23333 9.82708 8.83333 9.32708 9.43333 9.32708ZM9.43333 1.12708C10.1333 1.12708 10.6333 1.62708 10.6333 2.32708C10.6333 3.02708 10.1333 3.52708 9.43333 3.52708C8.83333 3.52708 8.23333 3.02708 8.23333 2.32708C8.23333 1.72708 8.83333 1.12708 9.43333 1.12708ZM2.33333 5.22708C3.03333 5.22708 3.53333 5.72708 3.53333 6.42708C3.53333 7.12708 3.03333 7.62708 2.33333 7.62708C1.63333 7.62708 1.13333 7.12708 1.13333 6.42708C1.13333 5.72708 1.63333 5.22708 2.33333 5.22708Z" fill="black"/>
+  </svg>
+
+                </div>
               </div>
                 <div class="buttons-slider">
                   <div class="buy-slider">
@@ -213,18 +246,21 @@
             <div class="basic-placeholder-mp">
               <div class="text-box-mp">
                 <p class="text-holder-slider">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Excepteur sint occaecat cupidatat non proident,
-                  sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  Воздвиженська церква є взірцем дерев’яної архітектури та історичною пам’яткою національного значення періоду українського Відродження. Відноситься до музейного комплексу відділу пам’яток дерев’яної архітектури музею «Дрогобиччина».
                 </p>
 
-              <div class="share-like-mp">
-                <!-- <img class="share-img" src="images/share.svg" alt="">
-                <img class="like-img"src="images/like.svg" alt=""> -->
-                <img style="width: 35px; height: 35px;" class="share-img" src="images/share.svg" alt="">
-                <img style="width: 35px; height: 35px;" class="like-img"src="images/likes.svg" alt="">
-              </div>
+                <div class="share-like-mp">
+                  <!-- <img class="share-img" src="images/share.svg" alt="">
+                  <img class="like-img"src="images/like.svg" alt=""> -->
+                  <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12.2488 2.7C11.8488 1.1 10.4488 0 8.84884 0C7.94884 0 7.04884 0.3 6.24884 0.9C5.44884 0.3 4.54884 0 3.64884 0C2.04884 0 0.64884 1.1 0.14884 2.7C-0.45116 4.9 0.64884 8.2 5.54884 11.1L6.14884 11.5L6.74884 11.1C11.7488 8.3 12.8488 4.9 12.2488 2.7ZM6.24884 10.1C1.94884 7.5 0.94884 4.8 1.34884 3C1.64884 1.9 2.54884 1.2 3.64884 1.2C4.34884 1.2 5.14884 1.5 5.84884 2.1L6.24884 2.5L6.64884 2.1C7.34884 1.6 8.04884 1.2 8.84884 1.2C9.94884 1.2 10.8488 1.9 11.1488 3C11.5488 4.8 10.5488 7.6 6.24884 10.1Z" fill="black"/>
+  </svg>
+
+                  <svg style="margin-left:10px;"width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M2.33333 8.72708C2.93333 8.72708 3.43333 8.52708 3.93333 8.12708L7.33333 9.72708C6.93333 10.9271 7.53333 12.2271 8.73333 12.7271C9.93333 13.1271 11.2333 12.5271 11.7333 11.3271C12.1333 10.1271 11.5333 8.82708 10.3333 8.32708C9.43333 8.02708 8.53333 8.22708 7.83333 8.82708L4.53333 7.22708C4.73333 6.72708 4.73333 6.12708 4.53333 5.52708L7.83333 3.92708C8.73333 4.82708 10.2333 4.92708 11.1333 4.02708C12.0333 3.12708 12.1333 1.62708 11.2333 0.727079C10.3333 -0.172921 8.83333 -0.272921 7.93333 0.627079C7.23333 1.22708 7.03333 2.12708 7.23333 3.02708L3.83333 4.62708C2.83333 3.82708 1.33333 4.02708 0.533333 5.02708C-0.266667 6.02708 -0.166667 7.42708 0.833333 8.32708C1.33333 8.62708 1.83333 8.72708 2.33333 8.72708ZM9.43333 9.32708C10.1333 9.32708 10.6333 9.82708 10.6333 10.5271C10.6333 11.2271 10.1333 11.7271 9.43333 11.7271C8.73333 11.7271 8.23333 11.2271 8.23333 10.5271C8.23333 9.82708 8.83333 9.32708 9.43333 9.32708ZM9.43333 1.12708C10.1333 1.12708 10.6333 1.62708 10.6333 2.32708C10.6333 3.02708 10.1333 3.52708 9.43333 3.52708C8.83333 3.52708 8.23333 3.02708 8.23333 2.32708C8.23333 1.72708 8.83333 1.12708 9.43333 1.12708ZM2.33333 5.22708C3.03333 5.22708 3.53333 5.72708 3.53333 6.42708C3.53333 7.12708 3.03333 7.62708 2.33333 7.62708C1.63333 7.62708 1.13333 7.12708 1.13333 6.42708C1.13333 5.72708 1.63333 5.22708 2.33333 5.22708Z" fill="black"/>
+  </svg>
+
+                </div>
               </div>
                 <div class="buttons-slider">
                   <div class="buy-slider">
@@ -236,7 +272,9 @@
         </div>
 
       </div>
-
+      <div style="width: 100px; display: block; margin: 0 auto; margin-bottom: 70px;" class="show-all">
+        <span style="color: orange; border-bottom: 1px solid black;">Показати все</span>
+      </div>
   </div>
 
 </div>
@@ -244,16 +282,16 @@
 <div class="main-theater">
   <div class="main-theater-background">
     <div class="main-theater-overlay"></div>
-    <div class="main-theater-mp">
+    <div class="main-theater-mp" style="display: flex; flex-direction: column;">
       <div class="main-theater-titles">
-        <p class="main-theater-subtext-mp">Театралізована екскурсія</p>
-        <p class="main-theater-title-mp">Таємниці дрогобицької ратуші</p>
+        <p class="main-theater-subtext-mp" style="font-size: 14px">Театралізована екскурсія</p>
+        <p class="main-theater-title-mp" style="font-size: 28px;">Таємниці дрогобицької ратуші</p>
       </div>
 
       <div class="basic-placeholder-mp">
-        <div class="text-box-mp">
+        <div class="text-box-mp" style="font-size: 14px">
           <p class="text-holder-mp">В екскурсію входить:
-            <ul>
+            <ul style="padding-inline-start: 17px;">
               <li>театралізована вечірня екскурсія у дворику ратуші з історії дрогобицького магістрату;</li>
               <li>вхідний квиток на вежу Ратуші;</li>
               <li>вхідний квиток в галерею ваг.</li>
@@ -262,18 +300,20 @@
 
 
         <div class="share-like-mp">
-          <!-- <img class="share-img" src="images/share.svg" alt="">
-          <img class="like-img"src="images/like.svg" alt=""> -->
-          <span class="icon-share"></span>
-          <span class="icon-heart"></span>
+          <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.2488 2.7C11.8488 1.1 10.4488 0 8.84884 0C7.94884 0 7.04884 0.3 6.24884 0.9C5.44884 0.3 4.54884 0 3.64884 0C2.04884 0 0.64884 1.1 0.14884 2.7C-0.45116 4.9 0.64884 8.2 5.54884 11.1L6.14884 11.5L6.74884 11.1C11.7488 8.3 12.8488 4.9 12.2488 2.7ZM6.24884 10.1C1.94884 7.5 0.94884 4.8 1.34884 3C1.64884 1.9 2.54884 1.2 3.64884 1.2C4.34884 1.2 5.14884 1.5 5.84884 2.1L6.24884 2.5L6.64884 2.1C7.34884 1.6 8.04884 1.2 8.84884 1.2C9.94884 1.2 10.8488 1.9 11.1488 3C11.5488 4.8 10.5488 7.6 6.24884 10.1Z" fill="white"/>
+          </svg>
+          <svg style="margin-left: 10px" width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.33333 8.72708C2.93333 8.72708 3.43333 8.52708 3.93333 8.12708L7.33333 9.72708C6.93333 10.9271 7.53333 12.2271 8.73333 12.7271C9.93333 13.1271 11.2333 12.5271 11.7333 11.3271C12.1333 10.1271 11.5333 8.82708 10.3333 8.32708C9.43333 8.02708 8.53333 8.22708 7.83333 8.82708L4.53333 7.22708C4.73333 6.72708 4.73333 6.12708 4.53333 5.52708L7.83333 3.92708C8.73333 4.82708 10.2333 4.92708 11.1333 4.02708C12.0333 3.12708 12.1333 1.62708 11.2333 0.727079C10.3333 -0.172921 8.83333 -0.272921 7.93333 0.627079C7.23333 1.22708 7.03333 2.12708 7.23333 3.02708L3.83333 4.62708C2.83333 3.82708 1.33333 4.02708 0.533333 5.02708C-0.266667 6.02708 -0.166667 7.42708 0.833333 8.32708C1.33333 8.62708 1.83333 8.72708 2.33333 8.72708ZM9.43333 9.32708C10.1333 9.32708 10.6333 9.82708 10.6333 10.5271C10.6333 11.2271 10.1333 11.7271 9.43333 11.7271C8.73333 11.7271 8.23333 11.2271 8.23333 10.5271C8.23333 9.82708 8.83333 9.32708 9.43333 9.32708ZM9.43333 1.12708C10.1333 1.12708 10.6333 1.62708 10.6333 2.32708C10.6333 3.02708 10.1333 3.52708 9.43333 3.52708C8.83333 3.52708 8.23333 3.02708 8.23333 2.32708C8.23333 1.72708 8.83333 1.12708 9.43333 1.12708ZM2.33333 5.22708C3.03333 5.22708 3.53333 5.72708 3.53333 6.42708C3.53333 7.12708 3.03333 7.62708 2.33333 7.62708C1.63333 7.62708 1.13333 7.12708 1.13333 6.42708C1.13333 5.72708 1.63333 5.22708 2.33333 5.22708Z" fill="white"/>
+          </svg>
         </div>
         </div>
           <div class="buttons">
             <div class="buy">
-              <p class="buy-text-mp">Замовити</p>
+              <p class="buy-text-mp">Замовити екскурсію</p>
             </div>
             <div class="more">
-              <p class="more-text">Більше</p>
+              <p class="more-text">Більше екскурсій</p>
             </div>
           </div>
       </div>
@@ -283,18 +323,18 @@
 
 <div class="main-exc-mp container">
   <div class="main-events">
-    <p class="main-slider-title">Події</p>
+    <p class="main-slider-title">Заплановані події</p>
     <div class="slider">
 
       
       <div class="basic-placeholder-min">
   <div class="photo-holder-min">
-    <img class="photo-exc-min" src="https://via.placeholder.com/200" alt="">
+    <img class="photo-exc-min" src="https://via.placeholder.com/170x140" alt="">
   </div>
   <div class="text-box-min-slider">
     <h4 class="text-holder-min">Таємниці дрогобицької ратуші 1</h4>
     <div class="text-box-min-slider-row">
-      <span class="text-box-min-slider-bottomText-notes">
+      <span class="text-box-min-slider-bottomText-notes" style="font-weight:600;">
         <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M9.6 0.8H8.2V0.5C8.2 0.2 8 0 7.7 0C7.4 0 7.2 0.2 7.2 0.5V0.8H3.8V0.5C3.8 0.2 3.6 0 3.3 0C3 0 2.8 0.2 2.8 0.5V0.8H1.4C0.6 0.8 0 1.4 0 2.2V9.2C0 9.9 0.6 10.6 1.4 10.6H9.7C10.4 10.6 11.1 10 11.1 9.2V2.2C11 1.4 10.4 0.8 9.6 0.8ZM1.4 1.9H2.8V2.2C2.8 2.5 3 2.7 3.3 2.7C3.6 2.7 3.8 2.5 3.8 2.2V1.9H7.2V2.2C7.2 2.5 7.4 2.7 7.7 2.7C8 2.7 8.2 2.5 8.2 2.2V1.9H9.6C9.8 1.9 10 2 10 2.2V3.6H1V2.2C1 2 1.2 1.9 1.4 1.9ZM9.6 9.5H1.4C1.2 9.5 1 9.4 1 9.2V4.6H10V9.2C9.9 9.4 9.8 9.5 9.6 9.5Z" fill="#F19106"/>
         </svg>
@@ -309,7 +349,7 @@
       </span>
     </div>
     <div class="text-box-min-slider-row">
-      <span class="text-box-min-slider-bottomText-notes">
+      <span class="text-box-min-slider-bottomText-notes" style="font-weight:600;">
         <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M5.6 13.3L5.3 13.1C5.1 13 0 9.5 0 5.6C0 2.5 2.5 0 5.6 0C8.7 0 11.2 2.5 11.2 5.6C11.2 9.5 6.1 13 5.9 13.1L5.6 13.3ZM5.6 1C3.1 1 1 3.1 1 5.6C1 8.5 4.6 11.3 5.6 12.1C6.6 11.4 10.2 8.6 10.2 5.6C10.2 3.1 8.1 1 5.6 1ZM5.6 8.1C4.2 8.1 3.1 7 3.1 5.6C3.1 4.2 4.2 3.1 5.6 3.1C7 3.1 8.1 4.2 8.1 5.6C8.1 7 7 8.1 5.6 8.1ZM5.6 4.1C4.8 4.1 4.1 4.8 4.1 5.6C4.1 6.4 4.8 7.1 5.6 7.1C6.4 7.1 7.1 6.4 7.1 5.6C7.1 4.8 6.4 4.1 5.6 4.1Z" fill="#F19106"/>
         </svg>
@@ -318,14 +358,15 @@
     </div>
   </div>
   <div class="buttons-min-slider">
-    <!-- <div class="buy">
-      <p class="buy-text">Замовити</p>
-    </div> -->
     <div class="like-min-slider">
-      <img class="like-img-min" src="images/like.png" alt="">
+      <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.2488 2.7C11.8488 1.1 10.4488 0 8.84884 0C7.94884 0 7.04884 0.3 6.24884 0.9C5.44884 0.3 4.54884 0 3.64884 0C2.04884 0 0.64884 1.1 0.14884 2.7C-0.45116 4.9 0.64884 8.2 5.54884 11.1L6.14884 11.5L6.74884 11.1C11.7488 8.3 12.8488 4.9 12.2488 2.7ZM6.24884 10.1C1.94884 7.5 0.94884 4.8 1.34884 3C1.64884 1.9 2.54884 1.2 3.64884 1.2C4.34884 1.2 5.14884 1.5 5.84884 2.1L6.24884 2.5L6.64884 2.1C7.34884 1.6 8.04884 1.2 8.84884 1.2C9.94884 1.2 10.8488 1.9 11.1488 3C11.5488 4.8 10.5488 7.6 6.24884 10.1Z" fill="black"/>
+</svg>
     </div>
     <div class="share-min-slider">
-      <img class="share-img-min" src="images/share2.png" alt="">
+      <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.33333 8.72708C2.93333 8.72708 3.43333 8.52708 3.93333 8.12708L7.33333 9.72708C6.93333 10.9271 7.53333 12.2271 8.73333 12.7271C9.93333 13.1271 11.2333 12.5271 11.7333 11.3271C12.1333 10.1271 11.5333 8.82708 10.3333 8.32708C9.43333 8.02708 8.53333 8.22708 7.83333 8.82708L4.53333 7.22708C4.73333 6.72708 4.73333 6.12708 4.53333 5.52708L7.83333 3.92708C8.73333 4.82708 10.2333 4.92708 11.1333 4.02708C12.0333 3.12708 12.1333 1.62708 11.2333 0.727079C10.3333 -0.172921 8.83333 -0.272921 7.93333 0.627079C7.23333 1.22708 7.03333 2.12708 7.23333 3.02708L3.83333 4.62708C2.83333 3.82708 1.33333 4.02708 0.533333 5.02708C-0.266667 6.02708 -0.166667 7.42708 0.833333 8.32708C1.33333 8.62708 1.83333 8.72708 2.33333 8.72708ZM9.43333 9.32708C10.1333 9.32708 10.6333 9.82708 10.6333 10.5271C10.6333 11.2271 10.1333 11.7271 9.43333 11.7271C8.73333 11.7271 8.23333 11.2271 8.23333 10.5271C8.23333 9.82708 8.83333 9.32708 9.43333 9.32708ZM9.43333 1.12708C10.1333 1.12708 10.6333 1.62708 10.6333 2.32708C10.6333 3.02708 10.1333 3.52708 9.43333 3.52708C8.83333 3.52708 8.23333 3.02708 8.23333 2.32708C8.23333 1.72708 8.83333 1.12708 9.43333 1.12708ZM2.33333 5.22708C3.03333 5.22708 3.53333 5.72708 3.53333 6.42708C3.53333 7.12708 3.03333 7.62708 2.33333 7.62708C1.63333 7.62708 1.13333 7.12708 1.13333 6.42708C1.13333 5.72708 1.63333 5.22708 2.33333 5.22708Z" fill="black"/>
+</svg>
     </div>
   </div>
 </div>
@@ -334,12 +375,12 @@
       
       <div class="basic-placeholder-min">
   <div class="photo-holder-min">
-    <img class="photo-exc-min" src="https://via.placeholder.com/200" alt="">
+    <img class="photo-exc-min" src="https://via.placeholder.com/170x140" alt="">
   </div>
   <div class="text-box-min-slider">
     <h4 class="text-holder-min">Таємниці дрогобицької ратуші 2</h4>
     <div class="text-box-min-slider-row">
-      <span class="text-box-min-slider-bottomText-notes">
+      <span class="text-box-min-slider-bottomText-notes" style="font-weight:600;">
         <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M9.6 0.8H8.2V0.5C8.2 0.2 8 0 7.7 0C7.4 0 7.2 0.2 7.2 0.5V0.8H3.8V0.5C3.8 0.2 3.6 0 3.3 0C3 0 2.8 0.2 2.8 0.5V0.8H1.4C0.6 0.8 0 1.4 0 2.2V9.2C0 9.9 0.6 10.6 1.4 10.6H9.7C10.4 10.6 11.1 10 11.1 9.2V2.2C11 1.4 10.4 0.8 9.6 0.8ZM1.4 1.9H2.8V2.2C2.8 2.5 3 2.7 3.3 2.7C3.6 2.7 3.8 2.5 3.8 2.2V1.9H7.2V2.2C7.2 2.5 7.4 2.7 7.7 2.7C8 2.7 8.2 2.5 8.2 2.2V1.9H9.6C9.8 1.9 10 2 10 2.2V3.6H1V2.2C1 2 1.2 1.9 1.4 1.9ZM9.6 9.5H1.4C1.2 9.5 1 9.4 1 9.2V4.6H10V9.2C9.9 9.4 9.8 9.5 9.6 9.5Z" fill="#F19106"/>
         </svg>
@@ -354,7 +395,7 @@
       </span>
     </div>
     <div class="text-box-min-slider-row">
-      <span class="text-box-min-slider-bottomText-notes">
+      <span class="text-box-min-slider-bottomText-notes" style="font-weight:600;">
         <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M5.6 13.3L5.3 13.1C5.1 13 0 9.5 0 5.6C0 2.5 2.5 0 5.6 0C8.7 0 11.2 2.5 11.2 5.6C11.2 9.5 6.1 13 5.9 13.1L5.6 13.3ZM5.6 1C3.1 1 1 3.1 1 5.6C1 8.5 4.6 11.3 5.6 12.1C6.6 11.4 10.2 8.6 10.2 5.6C10.2 3.1 8.1 1 5.6 1ZM5.6 8.1C4.2 8.1 3.1 7 3.1 5.6C3.1 4.2 4.2 3.1 5.6 3.1C7 3.1 8.1 4.2 8.1 5.6C8.1 7 7 8.1 5.6 8.1ZM5.6 4.1C4.8 4.1 4.1 4.8 4.1 5.6C4.1 6.4 4.8 7.1 5.6 7.1C6.4 7.1 7.1 6.4 7.1 5.6C7.1 4.8 6.4 4.1 5.6 4.1Z" fill="#F19106"/>
         </svg>
@@ -363,14 +404,15 @@
     </div>
   </div>
   <div class="buttons-min-slider">
-    <!-- <div class="buy">
-      <p class="buy-text">Замовити</p>
-    </div> -->
     <div class="like-min-slider">
-      <img class="like-img-min" src="images/like.png" alt="">
+      <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.2488 2.7C11.8488 1.1 10.4488 0 8.84884 0C7.94884 0 7.04884 0.3 6.24884 0.9C5.44884 0.3 4.54884 0 3.64884 0C2.04884 0 0.64884 1.1 0.14884 2.7C-0.45116 4.9 0.64884 8.2 5.54884 11.1L6.14884 11.5L6.74884 11.1C11.7488 8.3 12.8488 4.9 12.2488 2.7ZM6.24884 10.1C1.94884 7.5 0.94884 4.8 1.34884 3C1.64884 1.9 2.54884 1.2 3.64884 1.2C4.34884 1.2 5.14884 1.5 5.84884 2.1L6.24884 2.5L6.64884 2.1C7.34884 1.6 8.04884 1.2 8.84884 1.2C9.94884 1.2 10.8488 1.9 11.1488 3C11.5488 4.8 10.5488 7.6 6.24884 10.1Z" fill="black"/>
+</svg>
     </div>
     <div class="share-min-slider">
-      <img class="share-img-min" src="images/share2.png" alt="">
+      <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.33333 8.72708C2.93333 8.72708 3.43333 8.52708 3.93333 8.12708L7.33333 9.72708C6.93333 10.9271 7.53333 12.2271 8.73333 12.7271C9.93333 13.1271 11.2333 12.5271 11.7333 11.3271C12.1333 10.1271 11.5333 8.82708 10.3333 8.32708C9.43333 8.02708 8.53333 8.22708 7.83333 8.82708L4.53333 7.22708C4.73333 6.72708 4.73333 6.12708 4.53333 5.52708L7.83333 3.92708C8.73333 4.82708 10.2333 4.92708 11.1333 4.02708C12.0333 3.12708 12.1333 1.62708 11.2333 0.727079C10.3333 -0.172921 8.83333 -0.272921 7.93333 0.627079C7.23333 1.22708 7.03333 2.12708 7.23333 3.02708L3.83333 4.62708C2.83333 3.82708 1.33333 4.02708 0.533333 5.02708C-0.266667 6.02708 -0.166667 7.42708 0.833333 8.32708C1.33333 8.62708 1.83333 8.72708 2.33333 8.72708ZM9.43333 9.32708C10.1333 9.32708 10.6333 9.82708 10.6333 10.5271C10.6333 11.2271 10.1333 11.7271 9.43333 11.7271C8.73333 11.7271 8.23333 11.2271 8.23333 10.5271C8.23333 9.82708 8.83333 9.32708 9.43333 9.32708ZM9.43333 1.12708C10.1333 1.12708 10.6333 1.62708 10.6333 2.32708C10.6333 3.02708 10.1333 3.52708 9.43333 3.52708C8.83333 3.52708 8.23333 3.02708 8.23333 2.32708C8.23333 1.72708 8.83333 1.12708 9.43333 1.12708ZM2.33333 5.22708C3.03333 5.22708 3.53333 5.72708 3.53333 6.42708C3.53333 7.12708 3.03333 7.62708 2.33333 7.62708C1.63333 7.62708 1.13333 7.12708 1.13333 6.42708C1.13333 5.72708 1.63333 5.22708 2.33333 5.22708Z" fill="black"/>
+</svg>
     </div>
   </div>
 </div>
@@ -379,12 +421,12 @@
       
       <div class="basic-placeholder-min">
   <div class="photo-holder-min">
-    <img class="photo-exc-min" src="https://via.placeholder.com/200" alt="">
+    <img class="photo-exc-min" src="https://via.placeholder.com/170x140" alt="">
   </div>
   <div class="text-box-min-slider">
     <h4 class="text-holder-min">Таємниці дрогобицької ратуші 3</h4>
     <div class="text-box-min-slider-row">
-      <span class="text-box-min-slider-bottomText-notes">
+      <span class="text-box-min-slider-bottomText-notes" style="font-weight:600;">
         <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M9.6 0.8H8.2V0.5C8.2 0.2 8 0 7.7 0C7.4 0 7.2 0.2 7.2 0.5V0.8H3.8V0.5C3.8 0.2 3.6 0 3.3 0C3 0 2.8 0.2 2.8 0.5V0.8H1.4C0.6 0.8 0 1.4 0 2.2V9.2C0 9.9 0.6 10.6 1.4 10.6H9.7C10.4 10.6 11.1 10 11.1 9.2V2.2C11 1.4 10.4 0.8 9.6 0.8ZM1.4 1.9H2.8V2.2C2.8 2.5 3 2.7 3.3 2.7C3.6 2.7 3.8 2.5 3.8 2.2V1.9H7.2V2.2C7.2 2.5 7.4 2.7 7.7 2.7C8 2.7 8.2 2.5 8.2 2.2V1.9H9.6C9.8 1.9 10 2 10 2.2V3.6H1V2.2C1 2 1.2 1.9 1.4 1.9ZM9.6 9.5H1.4C1.2 9.5 1 9.4 1 9.2V4.6H10V9.2C9.9 9.4 9.8 9.5 9.6 9.5Z" fill="#F19106"/>
         </svg>
@@ -399,7 +441,7 @@
       </span>
     </div>
     <div class="text-box-min-slider-row">
-      <span class="text-box-min-slider-bottomText-notes">
+      <span class="text-box-min-slider-bottomText-notes" style="font-weight:600;">
         <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M5.6 13.3L5.3 13.1C5.1 13 0 9.5 0 5.6C0 2.5 2.5 0 5.6 0C8.7 0 11.2 2.5 11.2 5.6C11.2 9.5 6.1 13 5.9 13.1L5.6 13.3ZM5.6 1C3.1 1 1 3.1 1 5.6C1 8.5 4.6 11.3 5.6 12.1C6.6 11.4 10.2 8.6 10.2 5.6C10.2 3.1 8.1 1 5.6 1ZM5.6 8.1C4.2 8.1 3.1 7 3.1 5.6C3.1 4.2 4.2 3.1 5.6 3.1C7 3.1 8.1 4.2 8.1 5.6C8.1 7 7 8.1 5.6 8.1ZM5.6 4.1C4.8 4.1 4.1 4.8 4.1 5.6C4.1 6.4 4.8 7.1 5.6 7.1C6.4 7.1 7.1 6.4 7.1 5.6C7.1 4.8 6.4 4.1 5.6 4.1Z" fill="#F19106"/>
         </svg>
@@ -408,14 +450,15 @@
     </div>
   </div>
   <div class="buttons-min-slider">
-    <!-- <div class="buy">
-      <p class="buy-text">Замовити</p>
-    </div> -->
     <div class="like-min-slider">
-      <img class="like-img-min" src="images/like.png" alt="">
+      <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.2488 2.7C11.8488 1.1 10.4488 0 8.84884 0C7.94884 0 7.04884 0.3 6.24884 0.9C5.44884 0.3 4.54884 0 3.64884 0C2.04884 0 0.64884 1.1 0.14884 2.7C-0.45116 4.9 0.64884 8.2 5.54884 11.1L6.14884 11.5L6.74884 11.1C11.7488 8.3 12.8488 4.9 12.2488 2.7ZM6.24884 10.1C1.94884 7.5 0.94884 4.8 1.34884 3C1.64884 1.9 2.54884 1.2 3.64884 1.2C4.34884 1.2 5.14884 1.5 5.84884 2.1L6.24884 2.5L6.64884 2.1C7.34884 1.6 8.04884 1.2 8.84884 1.2C9.94884 1.2 10.8488 1.9 11.1488 3C11.5488 4.8 10.5488 7.6 6.24884 10.1Z" fill="black"/>
+</svg>
     </div>
     <div class="share-min-slider">
-      <img class="share-img-min" src="images/share2.png" alt="">
+      <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.33333 8.72708C2.93333 8.72708 3.43333 8.52708 3.93333 8.12708L7.33333 9.72708C6.93333 10.9271 7.53333 12.2271 8.73333 12.7271C9.93333 13.1271 11.2333 12.5271 11.7333 11.3271C12.1333 10.1271 11.5333 8.82708 10.3333 8.32708C9.43333 8.02708 8.53333 8.22708 7.83333 8.82708L4.53333 7.22708C4.73333 6.72708 4.73333 6.12708 4.53333 5.52708L7.83333 3.92708C8.73333 4.82708 10.2333 4.92708 11.1333 4.02708C12.0333 3.12708 12.1333 1.62708 11.2333 0.727079C10.3333 -0.172921 8.83333 -0.272921 7.93333 0.627079C7.23333 1.22708 7.03333 2.12708 7.23333 3.02708L3.83333 4.62708C2.83333 3.82708 1.33333 4.02708 0.533333 5.02708C-0.266667 6.02708 -0.166667 7.42708 0.833333 8.32708C1.33333 8.62708 1.83333 8.72708 2.33333 8.72708ZM9.43333 9.32708C10.1333 9.32708 10.6333 9.82708 10.6333 10.5271C10.6333 11.2271 10.1333 11.7271 9.43333 11.7271C8.73333 11.7271 8.23333 11.2271 8.23333 10.5271C8.23333 9.82708 8.83333 9.32708 9.43333 9.32708ZM9.43333 1.12708C10.1333 1.12708 10.6333 1.62708 10.6333 2.32708C10.6333 3.02708 10.1333 3.52708 9.43333 3.52708C8.83333 3.52708 8.23333 3.02708 8.23333 2.32708C8.23333 1.72708 8.83333 1.12708 9.43333 1.12708ZM2.33333 5.22708C3.03333 5.22708 3.53333 5.72708 3.53333 6.42708C3.53333 7.12708 3.03333 7.62708 2.33333 7.62708C1.63333 7.62708 1.13333 7.12708 1.13333 6.42708C1.13333 5.72708 1.63333 5.22708 2.33333 5.22708Z" fill="black"/>
+</svg>
     </div>
   </div>
 </div>
@@ -424,12 +467,12 @@
       
       <div class="basic-placeholder-min">
   <div class="photo-holder-min">
-    <img class="photo-exc-min" src="https://via.placeholder.com/200" alt="">
+    <img class="photo-exc-min" src="https://via.placeholder.com/170x140" alt="">
   </div>
   <div class="text-box-min-slider">
     <h4 class="text-holder-min">Таємниці дрогобицької ратуші 4</h4>
     <div class="text-box-min-slider-row">
-      <span class="text-box-min-slider-bottomText-notes">
+      <span class="text-box-min-slider-bottomText-notes" style="font-weight:600;">
         <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M9.6 0.8H8.2V0.5C8.2 0.2 8 0 7.7 0C7.4 0 7.2 0.2 7.2 0.5V0.8H3.8V0.5C3.8 0.2 3.6 0 3.3 0C3 0 2.8 0.2 2.8 0.5V0.8H1.4C0.6 0.8 0 1.4 0 2.2V9.2C0 9.9 0.6 10.6 1.4 10.6H9.7C10.4 10.6 11.1 10 11.1 9.2V2.2C11 1.4 10.4 0.8 9.6 0.8ZM1.4 1.9H2.8V2.2C2.8 2.5 3 2.7 3.3 2.7C3.6 2.7 3.8 2.5 3.8 2.2V1.9H7.2V2.2C7.2 2.5 7.4 2.7 7.7 2.7C8 2.7 8.2 2.5 8.2 2.2V1.9H9.6C9.8 1.9 10 2 10 2.2V3.6H1V2.2C1 2 1.2 1.9 1.4 1.9ZM9.6 9.5H1.4C1.2 9.5 1 9.4 1 9.2V4.6H10V9.2C9.9 9.4 9.8 9.5 9.6 9.5Z" fill="#F19106"/>
         </svg>
@@ -444,7 +487,7 @@
       </span>
     </div>
     <div class="text-box-min-slider-row">
-      <span class="text-box-min-slider-bottomText-notes">
+      <span class="text-box-min-slider-bottomText-notes" style="font-weight:600;">
         <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M5.6 13.3L5.3 13.1C5.1 13 0 9.5 0 5.6C0 2.5 2.5 0 5.6 0C8.7 0 11.2 2.5 11.2 5.6C11.2 9.5 6.1 13 5.9 13.1L5.6 13.3ZM5.6 1C3.1 1 1 3.1 1 5.6C1 8.5 4.6 11.3 5.6 12.1C6.6 11.4 10.2 8.6 10.2 5.6C10.2 3.1 8.1 1 5.6 1ZM5.6 8.1C4.2 8.1 3.1 7 3.1 5.6C3.1 4.2 4.2 3.1 5.6 3.1C7 3.1 8.1 4.2 8.1 5.6C8.1 7 7 8.1 5.6 8.1ZM5.6 4.1C4.8 4.1 4.1 4.8 4.1 5.6C4.1 6.4 4.8 7.1 5.6 7.1C6.4 7.1 7.1 6.4 7.1 5.6C7.1 4.8 6.4 4.1 5.6 4.1Z" fill="#F19106"/>
         </svg>
@@ -453,14 +496,15 @@
     </div>
   </div>
   <div class="buttons-min-slider">
-    <!-- <div class="buy">
-      <p class="buy-text">Замовити</p>
-    </div> -->
     <div class="like-min-slider">
-      <img class="like-img-min" src="images/like.png" alt="">
+      <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.2488 2.7C11.8488 1.1 10.4488 0 8.84884 0C7.94884 0 7.04884 0.3 6.24884 0.9C5.44884 0.3 4.54884 0 3.64884 0C2.04884 0 0.64884 1.1 0.14884 2.7C-0.45116 4.9 0.64884 8.2 5.54884 11.1L6.14884 11.5L6.74884 11.1C11.7488 8.3 12.8488 4.9 12.2488 2.7ZM6.24884 10.1C1.94884 7.5 0.94884 4.8 1.34884 3C1.64884 1.9 2.54884 1.2 3.64884 1.2C4.34884 1.2 5.14884 1.5 5.84884 2.1L6.24884 2.5L6.64884 2.1C7.34884 1.6 8.04884 1.2 8.84884 1.2C9.94884 1.2 10.8488 1.9 11.1488 3C11.5488 4.8 10.5488 7.6 6.24884 10.1Z" fill="black"/>
+</svg>
     </div>
     <div class="share-min-slider">
-      <img class="share-img-min" src="images/share2.png" alt="">
+      <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.33333 8.72708C2.93333 8.72708 3.43333 8.52708 3.93333 8.12708L7.33333 9.72708C6.93333 10.9271 7.53333 12.2271 8.73333 12.7271C9.93333 13.1271 11.2333 12.5271 11.7333 11.3271C12.1333 10.1271 11.5333 8.82708 10.3333 8.32708C9.43333 8.02708 8.53333 8.22708 7.83333 8.82708L4.53333 7.22708C4.73333 6.72708 4.73333 6.12708 4.53333 5.52708L7.83333 3.92708C8.73333 4.82708 10.2333 4.92708 11.1333 4.02708C12.0333 3.12708 12.1333 1.62708 11.2333 0.727079C10.3333 -0.172921 8.83333 -0.272921 7.93333 0.627079C7.23333 1.22708 7.03333 2.12708 7.23333 3.02708L3.83333 4.62708C2.83333 3.82708 1.33333 4.02708 0.533333 5.02708C-0.266667 6.02708 -0.166667 7.42708 0.833333 8.32708C1.33333 8.62708 1.83333 8.72708 2.33333 8.72708ZM9.43333 9.32708C10.1333 9.32708 10.6333 9.82708 10.6333 10.5271C10.6333 11.2271 10.1333 11.7271 9.43333 11.7271C8.73333 11.7271 8.23333 11.2271 8.23333 10.5271C8.23333 9.82708 8.83333 9.32708 9.43333 9.32708ZM9.43333 1.12708C10.1333 1.12708 10.6333 1.62708 10.6333 2.32708C10.6333 3.02708 10.1333 3.52708 9.43333 3.52708C8.83333 3.52708 8.23333 3.02708 8.23333 2.32708C8.23333 1.72708 8.83333 1.12708 9.43333 1.12708ZM2.33333 5.22708C3.03333 5.22708 3.53333 5.72708 3.53333 6.42708C3.53333 7.12708 3.03333 7.62708 2.33333 7.62708C1.63333 7.62708 1.13333 7.12708 1.13333 6.42708C1.13333 5.72708 1.63333 5.22708 2.33333 5.22708Z" fill="black"/>
+</svg>
     </div>
   </div>
 </div>
@@ -469,12 +513,12 @@
       
       <div class="basic-placeholder-min">
   <div class="photo-holder-min">
-    <img class="photo-exc-min" src="https://via.placeholder.com/200" alt="">
+    <img class="photo-exc-min" src="https://via.placeholder.com/170x140" alt="">
   </div>
   <div class="text-box-min-slider">
     <h4 class="text-holder-min">Таємниці дрогобицької ратуші 5</h4>
     <div class="text-box-min-slider-row">
-      <span class="text-box-min-slider-bottomText-notes">
+      <span class="text-box-min-slider-bottomText-notes" style="font-weight:600;">
         <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M9.6 0.8H8.2V0.5C8.2 0.2 8 0 7.7 0C7.4 0 7.2 0.2 7.2 0.5V0.8H3.8V0.5C3.8 0.2 3.6 0 3.3 0C3 0 2.8 0.2 2.8 0.5V0.8H1.4C0.6 0.8 0 1.4 0 2.2V9.2C0 9.9 0.6 10.6 1.4 10.6H9.7C10.4 10.6 11.1 10 11.1 9.2V2.2C11 1.4 10.4 0.8 9.6 0.8ZM1.4 1.9H2.8V2.2C2.8 2.5 3 2.7 3.3 2.7C3.6 2.7 3.8 2.5 3.8 2.2V1.9H7.2V2.2C7.2 2.5 7.4 2.7 7.7 2.7C8 2.7 8.2 2.5 8.2 2.2V1.9H9.6C9.8 1.9 10 2 10 2.2V3.6H1V2.2C1 2 1.2 1.9 1.4 1.9ZM9.6 9.5H1.4C1.2 9.5 1 9.4 1 9.2V4.6H10V9.2C9.9 9.4 9.8 9.5 9.6 9.5Z" fill="#F19106"/>
         </svg>
@@ -489,7 +533,7 @@
       </span>
     </div>
     <div class="text-box-min-slider-row">
-      <span class="text-box-min-slider-bottomText-notes">
+      <span class="text-box-min-slider-bottomText-notes" style="font-weight:600;">
         <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M5.6 13.3L5.3 13.1C5.1 13 0 9.5 0 5.6C0 2.5 2.5 0 5.6 0C8.7 0 11.2 2.5 11.2 5.6C11.2 9.5 6.1 13 5.9 13.1L5.6 13.3ZM5.6 1C3.1 1 1 3.1 1 5.6C1 8.5 4.6 11.3 5.6 12.1C6.6 11.4 10.2 8.6 10.2 5.6C10.2 3.1 8.1 1 5.6 1ZM5.6 8.1C4.2 8.1 3.1 7 3.1 5.6C3.1 4.2 4.2 3.1 5.6 3.1C7 3.1 8.1 4.2 8.1 5.6C8.1 7 7 8.1 5.6 8.1ZM5.6 4.1C4.8 4.1 4.1 4.8 4.1 5.6C4.1 6.4 4.8 7.1 5.6 7.1C6.4 7.1 7.1 6.4 7.1 5.6C7.1 4.8 6.4 4.1 5.6 4.1Z" fill="#F19106"/>
         </svg>
@@ -498,21 +542,27 @@
     </div>
   </div>
   <div class="buttons-min-slider">
-    <!-- <div class="buy">
-      <p class="buy-text">Замовити</p>
-    </div> -->
     <div class="like-min-slider">
-      <img class="like-img-min" src="images/like.png" alt="">
+      <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.2488 2.7C11.8488 1.1 10.4488 0 8.84884 0C7.94884 0 7.04884 0.3 6.24884 0.9C5.44884 0.3 4.54884 0 3.64884 0C2.04884 0 0.64884 1.1 0.14884 2.7C-0.45116 4.9 0.64884 8.2 5.54884 11.1L6.14884 11.5L6.74884 11.1C11.7488 8.3 12.8488 4.9 12.2488 2.7ZM6.24884 10.1C1.94884 7.5 0.94884 4.8 1.34884 3C1.64884 1.9 2.54884 1.2 3.64884 1.2C4.34884 1.2 5.14884 1.5 5.84884 2.1L6.24884 2.5L6.64884 2.1C7.34884 1.6 8.04884 1.2 8.84884 1.2C9.94884 1.2 10.8488 1.9 11.1488 3C11.5488 4.8 10.5488 7.6 6.24884 10.1Z" fill="black"/>
+</svg>
     </div>
     <div class="share-min-slider">
-      <img class="share-img-min" src="images/share2.png" alt="">
+      <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.33333 8.72708C2.93333 8.72708 3.43333 8.52708 3.93333 8.12708L7.33333 9.72708C6.93333 10.9271 7.53333 12.2271 8.73333 12.7271C9.93333 13.1271 11.2333 12.5271 11.7333 11.3271C12.1333 10.1271 11.5333 8.82708 10.3333 8.32708C9.43333 8.02708 8.53333 8.22708 7.83333 8.82708L4.53333 7.22708C4.73333 6.72708 4.73333 6.12708 4.53333 5.52708L7.83333 3.92708C8.73333 4.82708 10.2333 4.92708 11.1333 4.02708C12.0333 3.12708 12.1333 1.62708 11.2333 0.727079C10.3333 -0.172921 8.83333 -0.272921 7.93333 0.627079C7.23333 1.22708 7.03333 2.12708 7.23333 3.02708L3.83333 4.62708C2.83333 3.82708 1.33333 4.02708 0.533333 5.02708C-0.266667 6.02708 -0.166667 7.42708 0.833333 8.32708C1.33333 8.62708 1.83333 8.72708 2.33333 8.72708ZM9.43333 9.32708C10.1333 9.32708 10.6333 9.82708 10.6333 10.5271C10.6333 11.2271 10.1333 11.7271 9.43333 11.7271C8.73333 11.7271 8.23333 11.2271 8.23333 10.5271C8.23333 9.82708 8.83333 9.32708 9.43333 9.32708ZM9.43333 1.12708C10.1333 1.12708 10.6333 1.62708 10.6333 2.32708C10.6333 3.02708 10.1333 3.52708 9.43333 3.52708C8.83333 3.52708 8.23333 3.02708 8.23333 2.32708C8.23333 1.72708 8.83333 1.12708 9.43333 1.12708ZM2.33333 5.22708C3.03333 5.22708 3.53333 5.72708 3.53333 6.42708C3.53333 7.12708 3.03333 7.62708 2.33333 7.62708C1.63333 7.62708 1.13333 7.12708 1.13333 6.42708C1.13333 5.72708 1.63333 5.22708 2.33333 5.22708Z" fill="black"/>
+</svg>
     </div>
   </div>
 </div>
 
 
     </div>
+    <div style="width: 100px; display: block; margin: 0 auto; margin-top: 85px" class="show-all">
+      <span style="color: orange; border-bottom: 1px solid black;">Показати все</span>
+    </div>
   </div>
+
+
 
   <div class="description-text basic-exc-food"> <!-- Rework -->
     <!-- basic-exc-min -->
@@ -568,6 +618,11 @@
     <a href="food.html">Їжа</a>
     <a href="region.html">Регіон</a>
   </div>
+  <div style="color:orange" class="footer-menu-section">
+    <a href="#">Instagram</a>
+    <a href="#">Facebook</a>
+    <a href="#">Youtube</a>
+  </div>
 </div>
   <!-- </ul> -->
   <!-- Bottom border -->
@@ -592,17 +647,22 @@
 
   </div>
 <div class="footer-side">
-<div class="footer-contacts">
-<p>+380 (97) 786 60 09</p> <p>М. Дрогобич, пл. Ринок,1</p>
-
-<p>drogo.centr@gmail.com</p>
 
 
 
-</div>
-<div class="footer-social">
-  <a href="#">Instagram</a> - <a href="#">Facebook</a>  - <a href="#">Youtube</a>
-</div>
+<!-- <div class="footer-contacts"> -->
+  <div class="footer-menu-section">
+    <p>+380 (97) 786 60 09</p>
+    <p>М. Дрогобич, пл. Ринок,1</p>
+    <p>drogo.centr@gmail.com</p>
+  </div>
+
+
+
+<!-- </div> -->
+<!-- <div class="footer-social">
+  <a href="#">Instagram</a> <a href="#">Facebook</a><a href="#">Youtube</a>
+</div> -->
 <div class="footer-icons">
   <svg width="141" height="33" viewBox="0 0 141 33" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M17.8921 26.9277C12.0171 26.9277 6.32008 25.5151 1.42424 22.9547L0 28.252C5.42993 30.9006 11.572 32.3132 17.8921 32.3132C24.3011 32.3132 30.4432 30.9006 35.7841 28.252L34.3599 22.8665C29.553 25.5151 23.8561 26.9277 17.8921 26.9277Z" fill="#F19106"/>
@@ -693,7 +753,14 @@
 <path d="M129.385 43.3857C129.473 43.3857 129.583 43.4077 129.671 43.4516C129.758 43.4955 129.868 43.5614 130 43.6712L129.737 44.2859C129.539 44.1322 129.363 44.0444 129.232 44.0444C129.122 44.0444 129.012 44.0883 128.902 44.1761C128.792 44.2639 128.705 44.3737 128.639 44.5055C128.573 44.6372 128.551 44.7689 128.551 44.9006V46.1301H127.826V43.4297H128.551V44.1103H128.573C128.705 43.8468 128.836 43.6492 128.968 43.5394C129.078 43.4516 129.232 43.3857 129.385 43.3857Z" fill="#67415C"/>
 </svg>
 
+
+<a href="#top"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="40" y="40" width="40" height="40" transform="rotate(180 40 40)" fill="#F19106"/>
+<path d="M12.9504 24L20 17L27 24" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+</svg></a>
+
 </div>
+
 
 </div>
 

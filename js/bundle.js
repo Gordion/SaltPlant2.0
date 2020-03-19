@@ -179,6 +179,16 @@ $(document).ready(function () {
   $(".overlay").on('click', function (e) {
     closeMenuClick();
   });
+  $("a[href='#top']").click(function () {
+    $("html, body").animate({
+      scrollTop: 0
+    }, "slow");
+    return false;
+  });
+  $('.buy-excursion').stickySidebar({
+    topSpacing: 60,
+    bottomSpacing: 60
+  });
 });
 
 /***/ }),
@@ -192,11 +202,13 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.slider').slick({
+    prevArrow: "<div class=\"slider-arrow-prev\">\n      <svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n        <rect x=\"40\" width=\"40\" height=\"40\" transform=\"rotate(90 40 0)\" fill=\"#F19106\"/>\n        <path d=\"M24 27.0496L17 20L24 13\" stroke=\"white\" stroke-width=\"2\" stroke-miterlimit=\"10\"/>\n      </svg>\n      </div>",
+    nextArrow: "<div class=\"slider-arrow-next\">\n      <svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <rect y=\"40\" width=\"40\" height=\"40\" transform=\"rotate(-90 0 40)\" fill=\"#F19106\"/>\n      <path d=\"M16 12.9504L23 20L16 27\" stroke=\"white\" stroke-width=\"2\" stroke-miterlimit=\"10\"/>\n      </svg>\n      </div>",
     dots: true,
     infinite: true,
     speed: 300,
     // autoplay: true,
-    arrows: true,
+    // arrows: true,
     autoplaySpeed: 2000,
     slidesToShow: 4,
     slidesToScroll: 4,
@@ -227,32 +239,36 @@ $(document).ready(function () {
     // instead of a settings object
     ]
   });
-  var rev = $('.slider2');
-  rev.on('init', function (event, slick, currentSlide) {
-    var cur = $(slick.$slides[slick.currentSlide]),
-        next = cur.next(),
-        prev = cur.prev();
-    prev.addClass('slick-sprev');
-    next.addClass('slick-snext');
-    cur.removeClass('slick-snext').removeClass('slick-sprev');
-    slick.$prev = prev;
-    slick.$next = next;
-  }).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-    console.log('beforeChange');
-    var cur = $(slick.$slides[nextSlide]);
-    console.log(slick.$prev, slick.$next);
-    slick.$prev.removeClass('slick-sprev');
-    slick.$next.removeClass('slick-snext');
-    next = cur.next(), prev = cur.prev();
-    prev.prev();
-    prev.next();
-    prev.addClass('slick-sprev');
-    next.addClass('slick-snext');
-    slick.$prev = prev;
-    slick.$next = next;
-    cur.removeClass('slick-next').removeClass('slick-sprev');
-  });
+  var rev = $('.slider2'); // rev.on('init', function(event, slick, currentSlide) {
+  //   var
+  //     cur = $(slick.$slides[slick.currentSlide]),
+  //     next = cur.next(),
+  //     prev = cur.prev();
+  //   prev.addClass('slick-sprev');
+  //   next.addClass('slick-snext');
+  //   cur.removeClass('slick-snext').removeClass('slick-sprev');
+  //   slick.$prev = prev;
+  //   slick.$next = next;
+  // }).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+  //   console.log('beforeChange');
+  //   var cur = $(slick.$slides[nextSlide]);
+  //   console.log(slick.$prev, slick.$next);
+  //   slick.$prev.removeClass('slick-sprev');
+  //   slick.$next.removeClass('slick-snext');
+  //   next = cur.next(),
+  //     prev = cur.prev();
+  //   prev.prev();
+  //   prev.next();
+  //   prev.addClass('slick-sprev');
+  //   next.addClass('slick-snext');
+  //   slick.$prev = prev;
+  //   slick.$next = next;
+  //   cur.removeClass('slick-next').removeClass('slick-sprev');
+  // });
+
   rev.slick({
+    prevArrow: "<div class=\"slider-arrow-prev\">\n  <svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <rect x=\"40\" width=\"40\" height=\"40\" transform=\"rotate(90 40 0)\" fill=\"#F19106\"/>\n    <path d=\"M24 27.0496L17 20L24 13\" stroke=\"white\" stroke-width=\"2\" stroke-miterlimit=\"10\"/>\n  </svg>\n  </div>",
+    nextArrow: "<div class=\"slider-arrow-next\">\n  <svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect y=\"40\" width=\"40\" height=\"40\" transform=\"rotate(-90 0 40)\" fill=\"#F19106\"/>\n  <path d=\"M16 12.9504L23 20L16 27\" stroke=\"white\" stroke-width=\"2\" stroke-miterlimit=\"10\"/>\n  </svg>\n  </div>",
     speed: 1000,
     arrows: true,
     dots: false,
