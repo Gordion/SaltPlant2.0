@@ -84,14 +84,16 @@ $header-height: 75px;
 }
 
 .overlay {
-    opacity:    0.7;
-    background-color: #666666;
+    opacity:    0.5;
+    background-color: #000;
     width:      100%;
     height:     100%;
     z-index:    10;
-    top:        0;
+    top:        75px;
     left:       0;
-    position:   fixed;
+    right: 0;
+    bottom: 0;
+    position:   absolute;
     display: none;
 }
 
@@ -107,7 +109,7 @@ $header-height: 75px;
 }
 
 .menu-links {
-  padding: 10px;
+  // padding: 10px;
 }
 
 .menu-title {
