@@ -380,7 +380,8 @@ a:link, a:visited {
 
 .logo {
   position: relative;
-  width: 200px; }
+  width: 200px;
+  cursor: pointer; }
 
 .user {
   max-width: 35px;
