@@ -3,13 +3,14 @@
 .footer-menu-section {
   display: flex;
   flex-direction: column;
-  flex-basis: 130px;
+  flex-basis: 150px;
   justify-content: space-between;
 }
 
 .footer-menu-presection{
 display: flex;
 justify-content:space-around;
+flex-wrap: wrap;
 }
 
 .footer-main {

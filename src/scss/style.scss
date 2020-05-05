@@ -36,7 +36,10 @@
 
 $hero-image-height: 625px;
 $hero-image-height-small: 300px;
+$hero-image-height-mobile: 600px;
 $grid-menu-item-height: 150px;
+
+$color-orange: #f19106;
 
 * {
   box-sizing: border-box;
@@ -71,6 +74,11 @@ a:link, a:visited {
     width: 90%;
     padding: 0 5%;
   }
+  @media (max-width: 425px) {
+    width: 300px;
+    // padding: 0 5%;
+  }
+
 }
 
 .container-with-opacity {
@@ -103,6 +111,9 @@ a:link, a:visited {
   @media (max-width: 1280px) {
     height: $hero-image-height-small;
   }
+  @media (max-width: 425px) {
+    height: $hero-image-height-mobile;
+  }
 }
 
 .hero-image-title {
@@ -130,6 +141,9 @@ a:link, a:visited {
   @media (max-width: 1280px) {
     height: $hero-image-height-small;
   }
+  @media (max-width: 425px) {
+    height: $hero-image-height-mobile;
+  }
 }
 
 .down-arrow {
@@ -154,6 +168,9 @@ a:link, a:visited {
   /* margin: 0 5px 0; */
   @media (max-width: 1280px) {
     height: $hero-image-height-small;
+  }
+  @media (max-width: 425px) {
+    height: $hero-image-height-mobile;
   }
 }
 
@@ -347,6 +364,7 @@ a:link, a:visited {
   align-items: center;
   justify-content: center;
   flex: 1;
+  cursor: pointer;
 }
 
 .buy-text {
@@ -458,6 +476,10 @@ a:link, a:visited {
   justify-content: center;
 }
 
+.like-min-slider:hover {
+  background-color: #F19106;
+}
+
 .share-min-slider {
   width: 100px;
   height: 100%;
@@ -505,7 +527,7 @@ a:link, a:visited {
 
 .basic-placeholder-min-slider {
   margin: 20px 10px 30px;
-  width: 200px;
+  width: 170px;
   border: 1px solid #dadada;
   border-bottom: none;
   background-color: white;
@@ -668,12 +690,16 @@ a:link, a:visited {
 }
 
 .text-box-min-slider-bottomText-notes{
-  padding: 5px;
+  padding-top: 5px;
+}
+
+.text-box-united {
+  font-size: 12px;
 }
 
 .basic-placeholder-min {
   margin: 20px 10px 30px;
-  width: 200px;
+  width: 170px;
   border: 1px solid #dadada;
   border-bottom: none;
 }
@@ -710,7 +736,7 @@ a:link, a:visited {
 .basic-exc-min {
   margin-left: auto;
   margin-right: auto;
-  width: 670px;
+  width: 570px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -753,10 +779,16 @@ a:link, a:visited {
 
 .buy-excursion {
   // position: sticky;
-  background-color: white;
-  right: 10%;
+  // background-color: white;
   // top: 70%;
   z-index: 50;
+  position: relative;
+  top: -160px;
+  // right: 0;
+  width: 470px;
+  &.is-affixed {
+    top: 0;
+  }
 }
 
 .side-block {
@@ -794,16 +826,13 @@ a:link, a:visited {
 /*---------------------Special excursion---------------*/
 
 .basic-placeholder-spc {
-  width: 370px;
   border: 1px solid #dadada;
+  background-color: white;
   // border-bottom: none;
-  margin: 0 auto;
+  // position: absolute;
+  // top: 50px;
 }
 
-.main-exc-buy {
-  display: block;
-  width: 70%;
-}
 
 .buy-spc {
   /* background-color: #f19106; */
@@ -820,13 +849,14 @@ a:link, a:visited {
   justify-content: center;
   display: flex;
   height: 160px;
-  width: 370px;
   border-bottom: 1px solid #dadada;
+  background-color: white;
   // background-color: white;
 }
 
 .test-exc {
   display: flex;
+  justify-content: space-between;
 }
 
 /*-----------Food----------*/
@@ -1039,7 +1069,7 @@ a:link, a:visited {
   height: 364px;
   width: 100%;
   background-image: url(images/ratush.jfif);
-  // background-size: 100%;
+  background-size: 100% 364px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1050,6 +1080,11 @@ a:link, a:visited {
   align-items: center;
   justify-content: center;
   flex: 1;
+}
+
+.more-text:hover {
+  cursor: pointer;
+  color: #F19106;
 }
 
 .basic-placeholder-mp {
@@ -1066,7 +1101,7 @@ a:link, a:visited {
 
 .main-theater-mp {
   position: absolute;
-  right: 120px;
+  right: 100px;
   top: 0;
   padding: 30px;
 }
@@ -1180,6 +1215,11 @@ font-size: 0.8rem;
   justify-content: center;
   // flex: 1;
   margin-bottom: 44px;
+}
+
+.buy-slider:hover {
+  cursor: pointer;
+  background-color: #f19106;
 }
 
 .buttons-slider {
@@ -1327,6 +1367,88 @@ font-size: 0.8rem;
     padding-top: 20px; /* This creates some space between the element and the border. */
     border-top: 2px solid #D6D6D6; /* This creates the border. Replace black with whatever color you want. */
 }
+
+/*Buttons on hover*/
+
+.like-button {
+  cursor: pointer;
+}
+.like-button-mp {
+  cursor: pointer;
+}
+
+.share-button {
+  cursor: pointer;
+  .path-2 {
+    display: none;
+  }
+}
+
+.like-button {
+  cursor: pointer;
+  .path-2 {
+    display: none;
+  }
+}
+
+@mixin svg-multiple-path-mixin {
+  .path-1 {
+    display: none;
+  }
+  .path-2 {
+    display: block;
+  }
+}
+
+.main-slider .share-button:hover {
+  @include svg-multiple-path-mixin;
+}
+
+.main-slider .like-button:hover {
+  @include svg-multiple-path-mixin;
+}
+
+.share-min-slider:hover {
+  background: $color-orange;
+  cursor: pointer;
+  & > .share-button {
+    @include svg-multiple-path-mixin;
+    .path-2 {
+      fill: #fff;
+    }
+  }
+}
+
+.like-min-slider:hover {
+  background: $color-orange;
+  cursor: pointer;
+  & > .like-button {
+    @include svg-multiple-path-mixin;
+    .path-2 {
+      fill: #fff;
+    }
+  }
+}
+
+.share-like-mp .like-button:hover {
+  @include svg-multiple-path-mixin;
+}
+
+.share-like-mp .share-button:hover {
+  @include svg-multiple-path-mixin;
+}
+
+
+.share-button-mp {
+  cursor: pointer;
+}
+// .like-button {
+//   background: url('images/like.svg')
+// }
+//
+// .share-button {
+//   background: url('images/shareIndex.svg')
+// }
 
 
 @import 'components/footer';
@@ -1818,8 +1940,16 @@ font-size: 0.8rem;
 
 }
 
-
+/*Mobile design*/
 @media (max-width: 600px) {
+
+  // .hero-image {
+  //   height: 600px;
+  // }
+
+  .hero-image-title {
+    text-align: center;
+  }
 
   .basic-placeholder-mp {
     width: 100%;
@@ -1830,15 +1960,66 @@ font-size: 0.8rem;
   }
 
   .slider2 .slick-track {
-    width: 600px!important;
+    width: 300px!important;
   }
 
   .slider2 {
-    width: 400px!important;
+    width: 300px!important;
+    bottom: 0px;
+    height: 610px;
+    right: 60px;
   }
 
   .slider-placeholder-img {
-      width: 350px;
+      width: 300px;
+      height: 288px;
+    }
+
+  .slider .slider-arrow-prev {
+      left: -44px;
+    }
+
+  .slider .slider-arrow-next {
+      right: -44px;
+    }
+
+    .slider2 .slider-arrow-next {
+      top: -35px;
+      z-index: 50;
+      left: 200px;
+    }
+
+    .slider2 .slider-arrow-prev {
+      top: -35px;
+      right: 25px;
+      z-index: 51;
+    }
+
+    .slider2 .share-like-mp {
+      justify-content: center;
+    }
+
+    .slider2 .text-holder-slider {
+      width: 280px;
+      text-align: center;
+    }
+
+    .slider2 .buy-slider {
+      width: 280px;
+    }
+
+    .slider2 .main-theater-title-slider {
+      width: 222px;
+      font-size: 22px;
+      text-align: center;
+    }
+
+    .slider2 .slider-placeholder-main {
+      width: 300px;
+    }
+
+    .slider2 .basic-placeholder-mp {
+      width: 300px;
     }
 
   .slider2 .slick-list {
@@ -1854,8 +2035,15 @@ font-size: 0.8rem;
   }
 
   .slider2 .slider-placeholder {
-    width: 100vw;
-    left: -4%;
+    // width: 100vw;
+    // left: -4%;
+    display: block!important;
+    height: 700px;
+  }
+
+  .main-slider-title {
+    font-size: 32px;
+    padding: 0 0 30px 0;
   }
 
 //   .slider2 .slick-prev {
@@ -1890,15 +2078,23 @@ font-size: 0.8rem;
 
   .main-theater-background {
     background-image: url(images/illustration-mob.jpg);
-    height: 410px;
-    /* width: 480px; */
+    height: 581px;
+    background-size: 300px 581px;
+    width: 100%;
     margin-top: 300px;
   }
 
   .main-theater-mp {
     right: 0;
-    left: 10px;
-    top: 50px;
+    // left: 10px;
+    // top: 50px;
+    height: 581px;
+
+  }
+
+  .main-theater-mp .buttons {
+    display: block;
+    margin-top: 150px;
 
   }
 
@@ -1906,15 +2102,15 @@ font-size: 0.8rem;
     width: auto;
   }
 
-  .main-theater-overlay {
-    opacity:    0.5;
-    background-color: #000;
-    width:      100%;
-    height:     100%;
-    top:        0;
-    left:       0;
-    position:   absolute;
-  }
+  // .main-theater-overlay {
+  //   opacity:    0.5;
+  //   background-color: #000;
+  //   width:      100%;
+  //   height:     100%;
+  //   top:        0;
+  //   left:       0;
+  //   position:   absolute;
+  // }
 
   .overlay-theater {
       display: block;
@@ -2002,6 +2198,7 @@ font-size: 0.8rem;
   .basic-placeholder-min {
     margin: 0 auto;
     margin-bottom: 10px;
+    width: 176px;
   }
 
   .description-text {
