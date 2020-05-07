@@ -286,7 +286,8 @@ $(document).ready(function () {
     // instead of a settings object
     ]
   });
-  var rev = $('.slider2'); // rev.on('init', function(event, slick, currentSlide) {
+  var rev = $('.slider2');
+  var revc = $('.slider1'); // rev.on('init', function(event, slick, currentSlide) {
   //   var
   //     cur = $(slick.$slides[slick.currentSlide]),
   //     next = cur.next(),
@@ -323,6 +324,30 @@ $(document).ready(function () {
 
     /*  prevArrow: '<button> prev</button>',
       nextArrow: '<button> next</button>',*/
+    infinite: true,
+    centerMode: true,
+    slidesPerRow: 1,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerPadding: '0',
+    swipe: true,
+    customPaging: function customPaging(slider2, i) {
+      return '';
+    }
+    /*infinite: false,*/
+
+  });
+  revc.slick({
+    prevArrow: "<div class=\"slider-arrow-prev\">\n  <svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <rect x=\"40\" width=\"40\" height=\"40\" transform=\"rotate(90 40 0)\" fill=\"#F19106\"/>\n    <path d=\"M24 27.0496L17 20L24 13\" stroke=\"white\" stroke-width=\"2\" stroke-miterlimit=\"10\"/>\n  </svg>\n  </div>",
+    nextArrow: "<div class=\"slider-arrow-next\">\n  <svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect y=\"40\" width=\"40\" height=\"40\" transform=\"rotate(-90 0 40)\" fill=\"#F19106\"/>\n  <path d=\"M16 12.9504L23 20L16 27\" stroke=\"white\" stroke-width=\"2\" stroke-miterlimit=\"10\"/>\n  </svg>\n  </div>",
+    speed: 1000,
+    arrows: true,
+    dots: false,
+    focusOnSelect: true,
+
+    /*  prevArrow: '<button> prev</button>',
+      nextArrow: '<button> next</button>',*/
+    // fade: true,
     infinite: true,
     centerMode: true,
     slidesPerRow: 1,

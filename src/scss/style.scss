@@ -76,7 +76,7 @@ a:link, a:visited {
   }
   @media (max-width: 425px) {
     width: 300px;
-    // padding: 0 5%;
+    padding: 0px;
   }
 
 }
@@ -86,6 +86,7 @@ a:link, a:visited {
     width: 470px;
     // height: 130px;
     margin-left: 135px;
+    margin-top: 273px;
     background-color: rgba(241, 145, 6, 0.8);
     padding-top: 15px;
     padding-bottom: 15px;
@@ -152,6 +153,9 @@ a:link, a:visited {
   position: absolute;
   bottom: 35%;
   right: 49%;
+  @media (max-width: 425px) {
+    display: none;
+  }
 }
 
 
@@ -189,7 +193,11 @@ a:link, a:visited {
   @media (max-width: 1280px) {
     height: 200px;
   }
+  .slider1 & {
+  height: auto;
+  }
 }
+
 
 .title-exc {
   background-color: #dadada;
@@ -207,6 +215,10 @@ a:link, a:visited {
   @media (max-width: 1280px) {
     height: 200px;
   }
+}
+
+.full-size-slider{
+display: block;
 }
 
 .title-text {
@@ -1190,6 +1202,19 @@ font-size: 0.8rem;
 .partners-image {
   max-width: 100%;
   height: auto;
+  display: block;
+  @media (max-width: 425px) {
+    display: none;
+  }
+}
+
+.partners-image-mobile {
+  display: none;
+  @media (max-width: 425px) {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .partners {
@@ -1256,6 +1281,7 @@ font-size: 0.8rem;
     top: 0; right: 50px; bottom: 0;
     cursor: pointer;
 }
+
 
 .slider-arrow-prev {
   width: 40px;
@@ -1450,6 +1476,90 @@ font-size: 0.8rem;
 //   background: url('images/shareIndex.svg')
 // }
 
+
+/*slider1*/
+
+.slider1 {
+ max-width: 100%;
+ width: 100%;
+ height: 700px;
+ margin: 0 auto;
+ // right: 390px;
+ // top: -100px;
+
+}
+
+.slider1 .slick-list {
+ width: 100%;
+ // padding-top: 10%!important;
+ // padding-bottom: 10%!important;
+ // padding-left: 15%!important;
+ // padding-right: 15%!important;
+ // margin-top: 10%;
+ // margin-left: 15%;
+}
+
+.slider1 .slick-dots {
+ text-align: right;
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ right: 0;
+}
+
+.slider1 .slick-track {
+ max-width: 100%!important;
+ transform: translate3d(0, 0, 0)!important;
+ // perspective: 100px;
+}
+
+.slider1 .slick-slide {
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ margin: auto;
+ opacity: 0;
+ // width: auto!important;
+ transform: translate3d(0, 0, 0);
+ transition: transform 1s, opacity 1s;
+}
+
+.slider1 .slick-snext,
+.slick-sprev {
+ display: block;
+}
+
+.slider1 .slick-current {
+ opacity: 1;
+ position: relative;
+ display: block;
+ transform: translate3d(0, 0, 0px);
+ z-index: 2;
+ height: 700px;
+}
+
+.slider1 .slider-arrow-prev {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin: auto;
+    top: 550px; left: 135px; right: auto; bottom: 0;
+    z-index: 51;
+    cursor: pointer;
+}
+
+.slider1 .slider-arrow-next {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin: auto;
+    top: 550px; right: auto; left: 205px; bottom: 0;
+    z-index: 50;
+    cursor: pointer;
+}
+/**/
 
 @import 'components/footer';
 
@@ -1966,8 +2076,8 @@ font-size: 0.8rem;
   .slider2 {
     width: 300px!important;
     bottom: 0px;
-    height: 610px;
-    right: 60px;
+    height: 650px;
+    // right: 60px;
   }
 
   .slider-placeholder-img {
@@ -1984,14 +2094,14 @@ font-size: 0.8rem;
     }
 
     .slider2 .slider-arrow-next {
-      top: -35px;
+      top: -75px;
       z-index: 50;
-      left: 200px;
+      left: 100px;
     }
 
     .slider2 .slider-arrow-prev {
-      top: -35px;
-      right: 25px;
+      top: -75px;
+      right: 100px;
       z-index: 51;
     }
 
@@ -2005,11 +2115,12 @@ font-size: 0.8rem;
     }
 
     .slider2 .buy-slider {
-      width: 280px;
+      width: 270px;
+      margin-bottom: 0px;
     }
 
     .slider2 .main-theater-title-slider {
-      width: 222px;
+      width: 270px;
       font-size: 22px;
       text-align: center;
     }
@@ -2027,6 +2138,8 @@ font-size: 0.8rem;
     padding-bottom: 0!important;
     padding-left: 0!important;
     padding-right: 0!important;
+    margin-top: 0px;
+    margin-left: 0px;
   }
 
   .slider2 .slick-slide {
@@ -2044,6 +2157,7 @@ font-size: 0.8rem;
   .main-slider-title {
     font-size: 32px;
     padding: 0 0 30px 0;
+    margin-top: 50px;
   }
 
 //   .slider2 .slick-prev {
@@ -2081,7 +2195,7 @@ font-size: 0.8rem;
     height: 581px;
     background-size: 300px 581px;
     width: 100%;
-    margin-top: 300px;
+    margin-top: 50px;
   }
 
   .main-theater-mp {
@@ -2090,6 +2204,12 @@ font-size: 0.8rem;
     // top: 50px;
     height: 581px;
 
+  }
+
+  .show-all {
+    @media (max-width: 425px) {
+      margin-top: 50px!important;
+    }
   }
 
   .main-theater-mp .buttons {

@@ -75,4 +75,39 @@ flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 100px;
   // margin-right: 25%;
+  @media (max-width: 425px) {
+    display: block;
+    margin-top: 0px;
+  }
 }
+
+.footer-logo {
+  @media (max-width: 425px){
+  margin-bottom: 25px;
+  white-space: pre;
+  }
+}
+
+.footer-info {
+  @media (max-width: 425px){
+  margin-bottom: 25px;
+  }
+}
+
+  .footer-top-arrow {
+    display: block;
+    @media (max-width: 425px){
+      float: right;
+      margin: 10px 10px 0px 10px;
+      display: none;
+    }
+  }
+
+  .footer-top-arrow-mobile {
+    display: none;
+    @media (max-width: 425px){
+      float: right;
+      margin: 10px 10px 0px 10px;
+      display: block;
+    }
+  }
