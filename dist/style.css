@@ -375,6 +375,11 @@ a:link, a:visited {
       width: 300px;
       padding: 0px; } }
 
+.container-location {
+  max-width: 100%;
+  width: 1400px;
+  margin: 0 auto; }
+
 .container-with-opacity {
   max-width: 100%;
   width: 470px;
@@ -1109,6 +1114,16 @@ a:link, a:visited {
   .buy-excursion.is-affixed {
     top: 0; }
 
+.buy-excursion-mobile {
+  display: none;
+  position: relative;
+  top: -20px; }
+  .buy-excursion-mobile.is-affixed {
+    top: 0; }
+  @media (max-width: 600px) {
+    .buy-excursion-mobile {
+      display: block; } }
+
 .side-block {
   position: absolute;
   background-color: white;
@@ -1708,6 +1723,9 @@ a:link, a:visited {
   grid-template-rows: 345px 345px;
   grid-row-gap: 20px;
   grid-column-gap: 20px; }
+  @media (max-width: 425px) {
+    .grid-gallery-first {
+      display: block; } }
 
 .grid-gallery-second {
   display: grid;
@@ -1715,6 +1733,9 @@ a:link, a:visited {
   grid-template-rows: 345px 345px;
   grid-row-gap: 20px;
   grid-column-gap: 20px; }
+  @media (max-width: 425px) {
+    .grid-gallery-second {
+      display: block; } }
 
 .grid-gallery-third {
   display: grid;
@@ -1722,6 +1743,9 @@ a:link, a:visited {
   grid-template-rows: 345px;
   grid-row-gap: 20px;
   grid-column-gap: 20px; }
+  @media (max-width: 425px) {
+    .grid-gallery-third {
+      display: block; } }
 
 .grid-gallery-fourth {
   display: grid;
@@ -1730,6 +1754,9 @@ a:link, a:visited {
   grid-row-gap: 20px;
   grid-column-gap: 20px;
   margin-top: 20px; }
+  @media (max-width: 425px) {
+    .grid-gallery-fourth {
+      display: block; } }
 
 .grid-gallery-fifth {
   display: grid;
@@ -1738,9 +1765,16 @@ a:link, a:visited {
   grid-row-gap: 20px;
   grid-column-gap: 20px;
   margin-top: 20px; }
+  @media (max-width: 425px) {
+    .grid-gallery-fifth {
+      display: block; } }
 
 .gallery-loc {
   margin: 20px; }
+
+@media (max-width: 425px) {
+  .grid-el {
+    height: 216px !important; } }
 
 /**/
 /*-----------------Footer-------------*/
@@ -2230,8 +2264,29 @@ a:link, a:visited {
   .description-text-place {
     width: 100%; }
   .gallery {
-    width: 100%;
-    justify-content: center; } }
+    width: 100% !important;
+    justify-content: center; }
+  .basic-placeholder-spc {
+    width: 300px; }
+  .container-with-opacity {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 70px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 250px; }
+  .slider1 .slider-arrow-prev {
+    top: 700px;
+    left: 160px; }
+  .slider1 .slider-arrow-next {
+    top: 700px;
+    left: 225px; }
+  aside.buy-excursion {
+    display: none !important; } }
 
 
 /*# sourceMappingURL=style.css.map*/

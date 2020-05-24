@@ -141,11 +141,54 @@ $(".like-min-slider").on("mouseout", function (event) {
     return false;
   });
 
-  $('.buy-excursion').stickySidebar({
-    topSpacing: 60,
-    bottomSpacing: 60,
-    innerWrapperSelector: '.basic-placeholder-spc',
-    minwidth: 470
+// var sidebar = new StickySidebar('.buy-excursion', {minWidth: 426});
 
+  // $('.buy-excursion').stickySidebar({
+  //   topSpacing: 60,
+  //   bottomSpacing: 60,
+  //   innerWrapperSelector: '.basic-placeholder-spc',
+  //   minwidth: 470
+  // });
+
+  activateSidebar();
+
+  $(window).resize(function () {
+    activateSidebar();
   });
+
+  function activateSidebar() {
+    if ( window.innerWidth <= 425 ) {
+      // console.log('destroy');
+      // stickySidebar.destroy();
+    }
+    else {
+      stickySidebar = $('.buy-excursion').stickySidebar({
+        topSpacing: 60,
+        bottomSpacing: 60,
+        innerWrapperSelector: '.basic-placeholder-spc'
+      });
+   }
+ }
+
+
+
+// if (window.innerWidth < 425) {
+// $(window).resize(function () {
+//   $('.buy-excursion').stickySidebar({
+//     topSpacing: 60,
+//     bottomSpacing: 60,
+//     innerWrapperSelector: '.basic-placeholder-spc',
+//     minwidth: 470
+//   });
+//  });
+// };
+
+
+  // $('.buy-excursion').stickySidebar({
+  //   topSpacing: 60,
+  //   bottomSpacing: 60,
+  //   innerWrapperSelector: '.basic-placeholder-spc',
+  //   minwidth: 470
+  //
+  // });
 });
