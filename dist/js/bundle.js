@@ -145,13 +145,13 @@ $(document).ready(function () {
   }
 
   function menuClick() {
-    $(".menu-main").addClass("menu-opened");
-    $(".overlay").addClass("menu-opened");
+    $("body").addClass("menu-opened"); // $(".menu-main").addClass("menu-opened");
+    // $(".overlay").addClass("menu-opened");
   }
 
   function closeMenuClick() {
-    $(".menu-main").removeClass("menu-opened");
-    $(".overlay").removeClass("menu-opened");
+    $("body").removeClass("menu-opened"); // $(".menu-main").removeClass("menu-opened");
+    // $(".overlay").removeClass("menu-opened");
   }
 
   function getWindowLocation() {

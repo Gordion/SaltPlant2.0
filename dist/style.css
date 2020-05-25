@@ -447,7 +447,7 @@ a:link, a:visited {
   background-color: white;
   z-index: 100; }
 
-.menu-main.menu-opened {
+.menu-opened .menu-main {
   display: block;
   animation: open-menu 0.5s ease-in-out; }
 
@@ -471,9 +471,10 @@ a:link, a:visited {
   right: 0;
   bottom: 0;
   position: absolute;
+  z-index: 99;
   display: none; }
 
-.overlay.menu-opened {
+.menu-opened .overlay {
   display: block; }
 
 .menu-logo {
@@ -661,6 +662,17 @@ a:link, a:visited {
 
 .full-size-slider {
   display: block; }
+  @media (max-width: 600px) {
+    .full-size-slider {
+      height: 600px !important; } }
+
+@media (max-width: 600px) {
+  .slider-min {
+    height: 600px !important; } }
+
+@media (max-width: 600px) {
+  .slider1 .slick-current {
+    height: 600px !important; } }
 
 .title-text {
   font-size: 42px;
@@ -1183,6 +1195,10 @@ a:link, a:visited {
   flex-wrap: wrap; }
 
 /*map*/
+@media (max-width: 600px) {
+  .maps-center {
+    justify-content: center; } }
+
 .basic-placeholder-map {
   border: 1px solid #dadada;
   border-bottom: none;
@@ -1370,6 +1386,18 @@ a:link, a:visited {
   /* align-items: center;
   justify-content: center;
   display: flex; */ }
+
+.events-hidden-mobile {
+  display: none !important; }
+  @media (max-width: 600px) {
+    .events-hidden-mobile {
+      display: block !important; } }
+
+.events-hidden-desktop {
+  display: block !important; }
+  @media (max-width: 600px) {
+    .events-hidden-desktop {
+      display: none !important; } }
 
 .share-like-mp {
   padding: 10px;
@@ -2178,7 +2206,7 @@ a:link, a:visited {
   .main-theater-background {
     background-image: url(images/illustration-mob.jpg);
     height: 581px;
-    background-size: 300px 581px;
+    background-size: 90% 581px;
     width: 100%;
     margin-top: 50px; }
   .main-theater-mp {
@@ -2280,13 +2308,17 @@ a:link, a:visited {
     text-align: center;
     max-width: 250px; }
   .slider1 .slider-arrow-prev {
-    top: 700px;
-    left: 160px; }
+    top: 600px;
+    left: 35%; }
   .slider1 .slider-arrow-next {
-    top: 700px;
-    left: 225px; }
+    top: 600px;
+    left: 53%; }
   aside.buy-excursion {
-    display: none !important; } }
+    display: none !important; }
+  .title-exc {
+    height: 250px; }
+  .title-exc-main-background {
+    height: 250px; } }
 
 
 /*# sourceMappingURL=style.css.map*/

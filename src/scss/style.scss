@@ -243,6 +243,21 @@ a:link, a:visited {
 
 .full-size-slider{
 display: block;
+@media(max-width: 600px) {
+  height: 600px!important;
+}
+}
+
+.slider-min {
+  @media(max-width: 600px) {
+  height: 600px!important;
+  }
+}
+
+.slider1 .slick-current {
+  @media(max-width: 600px) {
+  height: 600px!important;
+  }
 }
 
 .title-text {
@@ -827,6 +842,7 @@ display: block;
   }
 }
 
+
 .buy-excursion-mobile {
   display: none;
   // z-index: 50;
@@ -921,6 +937,13 @@ display: block;
 }
 
 /*map*/
+
+  .maps-center {
+    @media(max-width: 600px) {
+      justify-content: center;
+    }
+  }
+
 .basic-placeholder-map {
   border: 1px solid #dadada;
   border-bottom: none;
@@ -1162,6 +1185,20 @@ display: block;
   /* align-items: center;
   justify-content: center;
   display: flex; */
+}
+
+.events-hidden-mobile {
+  display: none!important;
+  @media(max-width: 600px) {
+  display: block!important;
+  }
+}
+
+.events-hidden-desktop {
+  display: block!important;
+  @media(max-width: 600px) {
+  display: none!important;
+  }
 }
 
 .share-like-mp {
@@ -2304,10 +2341,12 @@ font-size: 0.8rem;
   .main-theater-background {
     background-image: url(images/illustration-mob.jpg);
     height: 581px;
-    background-size: 300px 581px;
+    background-size: 90% 581px;
     width: 100%;
     margin-top: 50px;
   }
+
+
 
   .main-theater-mp {
     right: 0;
@@ -2477,16 +2516,25 @@ font-size: 0.8rem;
   }
 
   .slider1 .slider-arrow-prev {
-    top: 700px;
-    left: 160px;
+    top: 600px;
+    left: 35%;
   }
 
   .slider1 .slider-arrow-next {
-    top: 700px;
-    left: 225px;
+    top: 600px;
+    left: 53%;
   }
 
   aside.buy-excursion {
     display: none!important;
   }
+
+  .title-exc {
+    height: 250px;
+  }
+
+  .title-exc-main-background {
+    height: 250px;
+  }
+
 }
