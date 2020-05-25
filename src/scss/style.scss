@@ -1144,7 +1144,8 @@ display: block;
   height: 364px;
   width: 100%;
   background-image: url(images/ratush.jfif);
-  background-size: 100% 364px;
+  // background-size: 100% 364px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1175,10 +1176,16 @@ display: block;
 }
 
 .main-theater-mp {
-  position: absolute;
-  right: 100px;
-  top: 0;
+  align-self: flex-end;
+  width: 540px;
+  margin-left: auto;
   padding: 30px;
+
+  @media(max-width: 600px) {
+    width: 100%;
+    position: absolute;
+  }
+
 }
 
 .text-box-mp {
