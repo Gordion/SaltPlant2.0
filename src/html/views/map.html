@@ -1,0 +1,129 @@
+<% var data = {
+  title: "Тематичні карти"
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div id="map"></div>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJt9wfYeJbhsxQREg96Ns1XN8gDrw1oxU&callback=initMap&libraries=&v=weekly"
+    defer></script>
+
+    <script type="text/javascript">
+    var map;
+    function initMap() {
+      var directionsService = new google.maps.DirectionsService;
+      var directionsRenderer = new google.maps.DirectionsRenderer;
+      map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: 49.3526897, lng: 23.5044474 },
+        zoom: 12
+      });
+       directionsRenderer.setMap(map);
+
+      var contentString = '<div id="content">'+
+           '<div id="siteNotice">'+
+           '</div>'+
+           '<h1 id="firstHeading" class="firstHeading">Drohobych Place1</h1>'+
+           '<div id="bodyContent">'+
+           '<p><b>Drohobych Place1</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+           'sandstone rock formation in the southern part of the '+
+           'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+           'south west of the nearest large town, Alice Springs; 450&#160;km '+
+           '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+           'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+           'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+           'Aboriginal people of the area. It has many springs, waterholes, '+
+           'rock caves and ancient paintings. Uluru is listed as a World '+
+           'Heritage Site.</p>'+
+           '<p>Attribution: Drohobych Place1, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+           'https://en.wikipedia.org/w/index.php?title=Drohobych</a> '+
+           '</div>'+
+           '</div>';
+           var infowindow = new google.maps.InfoWindow({
+         content: contentString
+       });
+
+       var contentString1 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Drohobych Place2</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Drohobych Place2</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+            'sandstone rock formation in the southern part of the '+
+            'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+            'south west of the nearest large town, Alice Springs; 450&#160;km '+
+            '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+            'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+            'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+            'Aboriginal people of the area. It has many springs, waterholes, '+
+            'rock caves and ancient paintings. Uluru is listed as a World '+
+            'Heritage Site.</p>'+
+            '<p>Attribution: Drohobych Place2, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+            'https://en.wikipedia.org/w/index.php?title=Drohobych</a> '+
+            '</div>'+
+            '</div>';
+            var infowindow1 = new google.maps.InfoWindow({
+          content: contentString1
+        });
+
+      var marker = new google.maps.Marker({
+        position: { lat: 49.3526897, lng: 23.5044474 },
+        map: map,
+        title: 'Центр'
+      });
+
+      var marker1 = new google.maps.Marker({
+        position: { lat: 49.3534084, lng: 23.5114214 },
+        map: map,
+        title: 'Синагога'
+      });
+
+      google.maps.event.addListener(marker, 'click', function() {
+        infowindow.open(map, marker);
+      });
+
+      google.maps.event.addListener(marker1, 'click', function() {
+        infowindow1.open(map, marker1);
+      });
+
+      var waypoints = [{
+        location: { lat: 49.3526897, lng: 23.5044474 }
+      }, {
+        location: { lat: 49.3534084, lng: 23.5114214 }
+      }];
+
+      directionsService.route({
+        origin: { lat: 49.3526897, lng: 23.5044474 },
+        destination: { lat: 49.3534084, lng: 23.5114214 },
+        waypoints: waypoints,
+        optimizeWaypoints: true,
+        travelMode: 'DRIVING'
+      }, function(response, status) {
+        if (status === 'OK') {
+          directionsRenderer.setDirections(response);
+          var route = response.routes[0];
+          var summaryPanel = document.getElementById('directions-panel');
+          summaryPanel.innerHTML = '';
+          // For each route, display summary information.
+          for (var i = 0; i < route.legs.length; i++) {
+            var routeSegment = i + 1;
+            summaryPanel.innerHTML += '<b>Route Segment: ' + routeSegment +
+                '</b><br>';
+            summaryPanel.innerHTML += route.legs[i].start_address + ' to ';
+            summaryPanel.innerHTML += route.legs[i].end_address + '<br>';
+            summaryPanel.innerHTML += route.legs[i].distance.text + '<br><br>';
+          }
+        } else {
+          window.alert('Directions request failed due to ' + status);
+        }
+      });
+    }
+    </script>
+
+    <style type="text/css">
+  #map {
+    height: 650px;
+  }
+</style>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>
