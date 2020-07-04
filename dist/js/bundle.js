@@ -243,9 +243,7 @@ $(document).ready(function () {
   });
 
   function activateSidebar() {
-    if (window.innerWidth <= 425) {// console.log('destroy');
-      // stickySidebar.destroy();
-    } else {
+    if (window.innerWidth <= 425) {} else {
       stickySidebar = $('.buy-excursion').stickySidebar({
         topSpacing: 60,
         bottomSpacing: 60,

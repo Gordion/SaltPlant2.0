@@ -160,8 +160,6 @@ $(".like-min-slider").on("mouseout", function (event) {
 
   function activateSidebar() {
     if ( window.innerWidth <= 425 ) {
-      // console.log('destroy');
-      // stickySidebar.destroy();
     }
     else {
       stickySidebar = $('.buy-excursion').stickySidebar({
