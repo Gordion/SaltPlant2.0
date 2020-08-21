@@ -419,7 +419,8 @@ display: block;
   display: flex;
   height: 114px;
   width: 370px;
-  margin-left: 20px;
+  // margin-left: 20px;
+  margin-left: 5px;
 }
 
 .buy {
@@ -447,18 +448,20 @@ display: block;
   border-top: 1px solid #c6c6c6;
   border-bottom: 1px solid #c6c6c6;
   height: 100%;
-  display: flex;
+  // display: flex;
   align-items: center;
   justify-content: center;
+  display: none;
 }
 
 .share {
   width: 70px;
   border: 1px solid #c6c6c6;
   height: 100%;
-  display: flex;
+  // display: flex;
   align-items: center;
   justify-content: center;
+  display: none;
 }
 
 .subtitle {
@@ -526,11 +529,12 @@ display: block;
 
 .buttons-min-slider {
   border: 1px solid #c6c6c6;
-  display: flex;
+  // display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 -1px;
   height: 36px;
+  display: none;
 }
 
 .like-min-slider {
@@ -606,7 +610,7 @@ display: block;
   margin: 20px 10px 30px;
   width: 170px;
   border: 1px solid #dadada;
-  border-bottom: none;
+  // border-bottom: none;
   background-color: white;
 }
 
@@ -718,11 +722,12 @@ display: block;
 
 /*---------------Minified placeholder---------------*/
 .buttons-min {
-  display: flex;
+  // display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 -1px;
   height: 30px;
+  display: none;
 }
 
 
@@ -780,7 +785,7 @@ display: block;
   margin: 20px 10px 30px;
   width: 170px;
   border: 1px solid #dadada;
-  border-bottom: none;
+  // border-bottom: none;
   background-color: #F6F6F6;
 }
 
@@ -1243,7 +1248,8 @@ display: block;
 
 .share-like-mp {
   padding: 10px 0px 10px;
-  display: flex;
+  // display: flex;
+  display: none;
 
   .icon-share,
   .icon-heart {
@@ -1313,7 +1319,7 @@ font-size: 0.8rem;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .partners-image {
@@ -1759,6 +1765,91 @@ font-size: 0.8rem;
   }
 
 }
+
+
+/*Buy-Form*/
+.buy-form {
+  height: 460px;
+  width: 370px;
+  display: block;
+  // border: 1px solid black;
+  margin: auto;
+  display: none;
+  background: white;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 40px 60px 40px;
+}
+
+.buy-form-text-main {
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+}
+
+.buy-form-text-sub {
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+}
+
+.buy-form-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buy-form-form ul{
+ padding: 0;
+ margin: 0;
+}
+
+.buy-form-form input {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #D3D3D3;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.buy-form-form input::placeholder {
+  font-weight: 600;
+}
+
+.buy-form-button {
+  height: 36px;
+  width: 250px;
+  background-color: #F19106;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+
+.buy-form-button-text {
+  font-size: 14px;
+  font-weight: 600;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-opened .buy-form {
+  display: block;
+  animation: open-menu 0.5s ease-in-out;
+}
+
+.form-opened .overlay {
+  display: block;
+}
+
+
 /**/
 
 @import 'components/footer';

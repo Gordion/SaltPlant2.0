@@ -154,6 +154,16 @@ $(document).ready(function () {
     // $(".overlay").removeClass("menu-opened");
   }
 
+  function formClick() {
+    $("body").addClass("form-opened"); // $(".menu-main").addClass("menu-opened");
+    // $(".overlay").addClass("menu-opened");
+  }
+
+  function closeFormClick() {
+    $("body").removeClass("form-opened"); // $(".menu-main").removeClass("menu-opened");
+    // $(".overlay").removeClass("menu-opened");
+  }
+
   function getWindowLocation() {
     console.log(window.location.href);
   } // function hoverLike(element) {
@@ -223,6 +233,12 @@ $(document).ready(function () {
   });
   $(".overlay").on('click', function (e) {
     closeMenuClick();
+  });
+  $(".buy-text-form").on('click', function (e) {
+    formClick();
+  });
+  $(".overlay").on('click', function (e) {
+    closeFormClick();
   });
   $("a[href='#top']").click(function () {
     $("html, body").animate({

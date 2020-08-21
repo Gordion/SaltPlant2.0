@@ -108,13 +108,13 @@
             </ul>
             <ul class="menu-side">
               <li><a target="_blank" href="http://poizdato.net/rozklad-po-stantsii/drohobych/">Як доїхати?</a></li>
-              <li><a target="_blank" href="http://drohobych-rda.gov.ua/15/">Туристична картина</a></li>
+              <!-- <li><a target="_blank" href="http://drohobych-rda.gov.ua/15/">Туристична картина</a></li> -->
 
               <li><a href="map.html">Прокласти маршрут</a></li>
-              <li><a href="#">Події</a></li>
+              <!-- <li><a href="#">Події</a></li> -->
 
-              <li><a target="_blank" href="https://ru-ru.facebook.com/velo.drohobych/">ВелоДрогобич</a></li>
-              <li><a href="partners.html">Партнери</a></li>
+              <!-- <li><a target="_blank" href="https://ru-ru.facebook.com/velo.drohobych/">ВелоДрогобич</a></li>
+              <li><a href="partners.html">Партнери</a></li> -->
 
               <li><a href="identic.html">Айдентика міста</a></li>
 
@@ -221,7 +221,7 @@
       <p class="subtitle" style="font-weight: 600;font-size: 28px; margin: 0 auto; margin-top: 50px">Відгуки</p>
       </div>
       <div class="comments basic-exc-min">
-        <div class="name-comments">
+        <!-- <div class="name-comments">
           <div class="username-com">
             <p>Іван</p>
           </div>
@@ -244,9 +244,16 @@
         </div>
         <div class="add-comment">
           <span>Додати відгук</span>
-        </div>
-      </div>
+        </div> -->
 
+
+
+
+        <div id="disqus_thread" style="width: 100%;"></div>
+
+
+
+      </div>
 
 
 
@@ -260,7 +267,7 @@
           <div class="slider">
             <div class="basic-placeholder-min">
               <div class="photo-holder-min">
-                <img class="photo-exc-min" src="https://via.placeholder.com/200" alt="">
+              <a href="activity-excursion.html"> <img class="photo-exc-min" src="https://via.placeholder.com/223" alt=""> </a>
               </div>
               <div class="text-box-min"style="width: auto;">
                 <p class="text-holder-min" style="text-align: center;">Таємниці дрогобицької ратуші</p>
@@ -279,7 +286,7 @@
             </div>
             <div class="basic-placeholder-min">
               <div class="photo-holder-min">
-                <img class="photo-exc-min" src="https://via.placeholder.com/200" alt="">
+                <a href="activity-excursion.html"> <img class="photo-exc-min" src="https://via.placeholder.com/223" alt=""> </a>
               </div>
               <div class="text-box-min"style="width: auto;">
                 <p class="text-holder-min"style="text-align: center;">Таємниці дрогобицької ратуші</p>
@@ -298,7 +305,7 @@
             </div>
             <div class="basic-placeholder-min">
               <div class="photo-holder-min">
-                <img class="photo-exc-min" src="https://via.placeholder.com/200" alt="">
+                <a href="activity-excursion.html"> <img class="photo-exc-min" src="https://via.placeholder.com/223" alt=""> </a>
               </div>
               <div class="text-box-min"style="width: auto;">
                 <p class="text-holder-min"style="text-align: center;">Таємниці дрогобицької ратуші</p>
@@ -320,7 +327,7 @@
 
             <div class="basic-placeholder-min events-hidden-desktop">
               <div class="photo-holder-min">
-                <img class="photo-exc-min" src="https://via.placeholder.com/200" alt="">
+                <a href="activity-excursion.html"> <img class="photo-exc-min" src="https://via.placeholder.com/200" alt=""> </a>
               </div>
               <div class="text-box-min">
                 <p class="text-holder-min">Таємниці дрогобицької ратуші</p>
@@ -339,7 +346,7 @@
             </div>
             <div class="basic-placeholder-min events-hidden-desktop">
               <div class="photo-holder-min">
-                <img class="photo-exc-min" src="https://via.placeholder.com/200" alt="">
+                <a href="activity-excursion.html"> <img class="photo-exc-min" src="https://via.placeholder.com/200" alt=""> </a>
               </div>
               <div class="text-box-min">
                 <p class="text-holder-min">Таємниці дрогобицької ратуші</p>
@@ -358,7 +365,7 @@
             </div>
             <div class="basic-placeholder-min events-hidden-desktop">
               <div class="photo-holder-min">
-                <img class="photo-exc-min" src="https://via.placeholder.com/200" alt="">
+              <a href="activity-excursion.html"> <img class="photo-exc-min" src="https://via.placeholder.com/200" alt=""> </a>
               </div>
               <div class="text-box-min">
                 <p class="text-holder-min">Таємниці дрогобицької ратуші</p>
@@ -383,10 +390,10 @@
 
 
     <aside class="buy-excursion">
-      <div class="basic-placeholder-spc">
+      <div class="basic-placeholder-spc" style="width: 500px;">
 
         <div class="text-box-spc">
-          <p class="text-holder">Основна інформація</p>
+          <p class="text-holder" style="text-align: center;">Основна інформація</p>
         </div>
         <div class="desc-options"style="font-weight: 600">
           <p><span class="square-hex"><svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -421,7 +428,7 @@
         </div>
           <div class="activity-buttons">
             <div class="buy-spc-activity">
-              <p class="buy-text">Замовити екскурсію</p>
+              <p class="buy-text" style="font-weight: 600;">Замовити екскурсію</p>
             </div>
             <div class="activity-paired-buttons">
               <div class="share-like-mp">
@@ -441,6 +448,25 @@
 
  </div>
 
+ <script>
+
+ var disqus_config = function () {
+ this.page.url = window.location.href;
+ this.page.identifier = window.location.pathname;
+ };
+
+ (function() {
+ var d = document, s = d.createElement('script');
+ s.src = 'https://https-gordion-github-io-saltplant3-0.disqus.com/embed.js';
+ s.setAttribute('data-timestamp', +new Date());
+ (d.head || d.body).appendChild(s);
+ })();
+
+
+
+ </script>
+
+ <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 <!-- <link href="normalize.css" rel="stylesheet">
 <link href="style.css" rel="stylesheet"> -->
@@ -478,18 +504,20 @@
   <div class="footer-menu-presection footer2">
     <div class="footer-menu-section">
 <a style="padding: 3px;" href="http://poizdato.net/rozklad-po-stantsii/drohobych/">Як доїхати?</a>
-<a style="padding: 3px;" href="http://drohobych-rda.gov.ua/15/">Туристична картина</a>
+
     </div>
     <div class="footer-menu-section">
-<a style="padding: 3px;" href="#">Прокласти маршрут</a>
-<a style="padding: 3px;" href="#">Події</a>
+<a style="padding: 3px;" href="map.html">Прокласти маршрут</a>
+<!-- <a style="padding: 3px;" href="http://drohobych-rda.gov.ua/15/">Туристична картина</a> -->
+<!-- <a style="padding: 3px;" href="#">Події</a> -->
     </div>
     <div class="footer-menu-section">
-<a style="padding: 3px;" href="https://ru-ru.facebook.com/velo.drohobych/">ВелоДрогобич</a>
-<a style="padding: 3px;" href="partners.html">Партнери</a>
-    </div>
-    <div class="footer-menu-section">
+<!-- <a style="padding: 3px;" href="https://ru-ru.facebook.com/velo.drohobych/">ВелоДрогобич</a>
+<a style="padding: 3px;" href="partners.html">Партнери</a> -->
 <a style="padding: 3px;" href="identic.html">Айдентика міста</a>
+    </div>
+    <div class="footer-menu-section">
+
 <a style="padding: 3px;" href="https://drohobych-rada.gov.ua/%d0%bf%d1%80%d0%b8%d0%b9%d0%bc%d0%b0%d0%bb%d1%8c%d0%bd%d1%8f/%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d0%b8/">Контакти</a>
     </div>
   </div>

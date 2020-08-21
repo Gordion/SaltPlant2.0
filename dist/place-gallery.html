@@ -108,13 +108,13 @@
             </ul>
             <ul class="menu-side">
               <li><a target="_blank" href="http://poizdato.net/rozklad-po-stantsii/drohobych/">Як доїхати?</a></li>
-              <li><a target="_blank" href="http://drohobych-rda.gov.ua/15/">Туристична картина</a></li>
+              <!-- <li><a target="_blank" href="http://drohobych-rda.gov.ua/15/">Туристична картина</a></li> -->
 
               <li><a href="map.html">Прокласти маршрут</a></li>
-              <li><a href="#">Події</a></li>
+              <!-- <li><a href="#">Події</a></li> -->
 
-              <li><a target="_blank" href="https://ru-ru.facebook.com/velo.drohobych/">ВелоДрогобич</a></li>
-              <li><a href="partners.html">Партнери</a></li>
+              <!-- <li><a target="_blank" href="https://ru-ru.facebook.com/velo.drohobych/">ВелоДрогобич</a></li>
+              <li><a href="partners.html">Партнери</a></li> -->
 
               <li><a href="identic.html">Айдентика міста</a></li>
 
@@ -170,7 +170,7 @@
                 <a href="place.html" class="buy-text" style="padding: 10px;">Прокласти маршрут</a>
             </div>
         </div>
-        <div class="desc-options">
+        <div class="desc-options" style="width: auto;">
           <span style="font-size: 28px; font-weight: 600; float: left; padding: 5px;">Про заклад</span><br><br>
           <p style="font-size: 16px;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
         </div>
@@ -181,7 +181,7 @@
       <p class="subtitle" style="font-weight: 600;font-size: 28px; margin: 0 auto; margin-top: 50px">Відгуки</p>
       </div>
       <div class="comments basic-exc-min">
-        <div class="name-comments">
+        <!-- <div class="name-comments">
           <div class="username-com">
             <p>Іван</p>
           </div>
@@ -204,7 +204,15 @@
         </div>
         <div class="add-comment">
           <span>Додати відгук</span>
-        </div>
+        </div> -->
+
+
+
+
+        <div id="disqus_thread" style="width: 100%;"></div>
+
+
+
       </div>
 
 
@@ -353,7 +361,7 @@
               <a href="place.html" class="buy-text" style="padding: 10px;">Прокласти маршрут</a>
           </div>
       </div>
-      <div class="desc-options">
+      <div class="desc-options" style="width: auto; padding-bottom: 10px;">
         <span style="font-size: 28px; font-weight: 600; float: left; padding: 5px;">Про заклад</span><br><br>
         <p style="font-size: 16px;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
       </div>
@@ -383,6 +391,26 @@
    <img class="photo-gallery" style="width: 370px; height: 250px;" src="images/activity-excursion.jfif" alt="">
    </a>
  </div>
+
+ <script>
+
+ var disqus_config = function () {
+ this.page.url = window.location.href;
+ this.page.identifier = window.location.pathname;
+ };
+
+ (function() {
+ var d = document, s = d.createElement('script');
+ s.src = 'https://https-gordion-github-io-saltplant3-0.disqus.com/embed.js';
+ s.setAttribute('data-timestamp', +new Date());
+ (d.head || d.body).appendChild(s);
+ })();
+
+
+
+ </script>
+
+ <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 <!-- <link href="normalize.css" rel="stylesheet">
 <link href="style.css" rel="stylesheet"> -->
@@ -420,18 +448,20 @@
   <div class="footer-menu-presection footer2">
     <div class="footer-menu-section">
 <a style="padding: 3px;" href="http://poizdato.net/rozklad-po-stantsii/drohobych/">Як доїхати?</a>
-<a style="padding: 3px;" href="http://drohobych-rda.gov.ua/15/">Туристична картина</a>
+
     </div>
     <div class="footer-menu-section">
-<a style="padding: 3px;" href="#">Прокласти маршрут</a>
-<a style="padding: 3px;" href="#">Події</a>
+<a style="padding: 3px;" href="map.html">Прокласти маршрут</a>
+<!-- <a style="padding: 3px;" href="http://drohobych-rda.gov.ua/15/">Туристична картина</a> -->
+<!-- <a style="padding: 3px;" href="#">Події</a> -->
     </div>
     <div class="footer-menu-section">
-<a style="padding: 3px;" href="https://ru-ru.facebook.com/velo.drohobych/">ВелоДрогобич</a>
-<a style="padding: 3px;" href="partners.html">Партнери</a>
-    </div>
-    <div class="footer-menu-section">
+<!-- <a style="padding: 3px;" href="https://ru-ru.facebook.com/velo.drohobych/">ВелоДрогобич</a>
+<a style="padding: 3px;" href="partners.html">Партнери</a> -->
 <a style="padding: 3px;" href="identic.html">Айдентика міста</a>
+    </div>
+    <div class="footer-menu-section">
+
 <a style="padding: 3px;" href="https://drohobych-rada.gov.ua/%d0%bf%d1%80%d0%b8%d0%b9%d0%bc%d0%b0%d0%bb%d1%8c%d0%bd%d1%8f/%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d0%b8/">Контакти</a>
     </div>
   </div>
